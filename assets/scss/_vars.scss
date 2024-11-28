@@ -12,14 +12,14 @@ $gray5: #4B5563;
 
 // создаем переменные для css
 :root{
-    --color-accent: #($accent);
-    --color-accent-second: #($accent-second);
-    --color-text: #111827;
-    --color-gray: #($gray);
-    --color-gray2: #($gray2);
-    --color-gray3: #($gray3);
-    --color-gray4: #($gray4);
-    --color-gray5: #($gray5);
+    --color-accent: #{$accent};
+    --color-accent-second: #{$accent-second};
+    --color-text: #{$text};
+    --color-gray: #{$gray};
+    --color-gray2: #{$gray2};
+    --color-gray3: #{$gray3};
+    --color-gray4: #{$gray4};
+    --color-gray5: #{$gray5};
     --color-white: #{$white};
     --color-black: #{$black};
     --content-width: 1200px;
