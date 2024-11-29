@@ -141,4 +141,24 @@ button {
   font-size: 16px;
   font-weight: 700;
   text-transform: uppercase;
+}
+.welcome {
+  width: 100%;
+}
+.welcome__upper {
+  min-height: 136px;
+  padding-top: 42px;
+  overflow: hidden;
+}
+.welcome .wbot {
+  position: relative;
+  background: linear-gradient(96.95deg, rgba(0, 42, 85, 0.68) 24.05%, rgba(0, 42, 85, 0) 57.46%), linear-gradient(79.3deg, #002A55 26.57%, rgba(0, 42, 85, 0.76) 51.95%, rgba(12, 37, 94, 0) 88.87%), url("/assets/img/images/fura.png"), #003B77;
+  background-size: cover;
+  background-position: center;
+}
+.welcome .wbot__text {
+  display: flex;
+  margin: auto;
+  top: -95px;
+  position: relative;
 }/*# sourceMappingURL=main-style.min.css.map */

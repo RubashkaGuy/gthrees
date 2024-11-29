@@ -1,0 +1,24 @@
+.welcome {
+    width: 100%;
+    
+    &__upper {
+        min-height: 136px;
+        padding-top: 42px;
+        overflow: hidden;
+    }
+    .wbot {
+        position: relative;
+        background: linear-gradient(96.95deg, rgba(0, 42, 85, 0.68) 24.05%, rgba(0, 42, 85, 0) 57.46%), linear-gradient(79.3deg, #002A55 26.57%, rgba(0, 42, 85, 0.76) 51.95%, rgba(12, 37, 94, 0) 88.87%), url("/assets/img/images/fura.png"), #003B77;
+        background-size: cover;
+        background-position: center;
+        &__text {
+            display: flex;
+            margin: auto;
+            top: -95px;
+            position: relative;
+            
+        }
+    }
+}
+
+
