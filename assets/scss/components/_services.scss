@@ -1,0 +1,77 @@
+.scont {
+    margin-top: 140px;
+    &__top {
+        min-height: 136px;
+        padding-top: 40px;
+    }
+    &__bottom {
+        background-color: #113385;
+        // background: url("/assets/img/images/1ca3d9df73314251b2c2a73d816751e8.jpeg");
+        background-position: center;
+        object-fit: cover;
+        .serv {
+            max-width: 1456px;
+            margin-right: auto;
+            margin-left: auto;
+            &__image {
+                display: flex;
+                position: relative;
+                top: -95px;
+            }
+            &__text {
+                &-title {
+                    font-size: 52px;
+                    line-height: 72px;
+                    font-weight: 400;
+                    margin-top: -40px;
+
+                }
+                &-subtitle {
+                    font-size: 24px;
+                    width: 1087px;
+                    line-height: 33px;
+                    font-weight: 400;
+                    margin-left: 369px;
+                }
+            }
+            &__link {
+                
+                display: flex;
+                gap: 10px;
+                
+            }
+            &__scroll {
+                .scrcards {
+                    display: flex;
+                    gap: 20px;
+                    &__card {
+                        margin-bottom: 50px;
+                        position: relative;
+                        &-text {
+                            margin: 0;
+                            position: absolute;
+                            top: 268px;
+                            left: 40px;
+                        }
+                    }
+
+                }
+                &__slidebar {
+                    display: block;
+                    width: calc(100% - 40px);
+                    max-width: 1456px;
+                    height: 4px;
+                    border-radius: 5px;
+                    background: #285197;
+                    position: absolute;
+                    z-index: 10;
+                    left: 50%;
+                    bottom: 140px;
+                    -webkit-transform: translateX(-50%);
+                    transform: translateX(-50%);
+                    
+                }
+            }
+        }
+    }
+}

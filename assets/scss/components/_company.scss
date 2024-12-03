@@ -1,0 +1,63 @@
+.company {
+    .cmp {
+        width: 100%;
+        max-width: 1456px;
+        margin-right: auto;
+        margin-left: auto;
+        &__text {
+            &-title {
+                font-size: 52px;
+                font-weight: 100;
+                color: var(--color-accent);
+            }
+            &-subtitle {
+                font-size: 24px;
+                color: var(--color-text);
+                width: 1087px;
+                padding-left: 369px;
+                width: 100%;
+                font-weight: 400;
+                line-height: 33.6px;
+            }
+        }
+
+        &__map {
+            position: relative;
+            .dot {
+                position: absolute;
+                &__text {
+                    background-color: var(--color-white);
+                    
+                    &-title {
+                        font-weight: 700;
+                        font-size: 16px;
+                        color: var(--color-black);
+                    }
+                    &-subtitle {
+
+                    }
+                }
+            }
+            .dot1 {
+                left: 360px;
+                transform: translate(-10px,100px);
+            }
+            &-map {
+                margin-top: 60px;
+            }
+        }
+        &__link {
+            display: flex;
+            gap: 10px;
+            align-items: center;
+            &-text {
+                padding-bottom: 2px;
+                font-size: 18px;
+                font-weight: 500;
+                color: var(--color-accent);
+                border-bottom: solid 1px var(--color-text);
+                
+            }
+        }
+    }
+}
