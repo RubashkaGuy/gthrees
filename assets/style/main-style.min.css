@@ -346,8 +346,7 @@ button {
 .scont__bottom {
   background-color: #113385;
   background-position: center;
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
 }
 .scont__bottom .serv {
   max-width: 1456px;
@@ -401,6 +400,7 @@ button {
   z-index: 10;
   left: 50%;
   bottom: 140px;
+  -webkit-transform: translateX(-50%);
   transform: translateX(-50%);
 }
 
@@ -476,18 +476,15 @@ button {
   gap: 20px;
   grid-template-rows: repeat(2, 1fr);
   display: grid;
-  grid-auto-rows: 349px;
 }
-.partners .pcont__col__item {
-  height: 349px;
-  grid-auto-rows: 349px;
+.partners .pcont__col-item {
+  min-height: 349px;
   background-color: var(--color-gray1);
 }
 .partners .pcont__col .it1 {
   background-image: url(/assets/img/images/chemistry.jpeg);
   background-position: center;
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
   grid-column: span 2;
 }
 
@@ -637,12 +634,6 @@ button {
   color: var(--color-white);
   width: 349px;
 }
-.request .rcont__request .rform__inputs .rinput__input::-moz-placeholder {
-  color: var(--color-gray2);
-  font-size: 16px;
-  font-weight: 400;
-  line-height: 22px;
-}
 .request .rcont__request .rform__inputs .rinput__input::placeholder {
   color: var(--color-gray2);
   font-size: 16px;
@@ -753,8 +744,7 @@ button {
 .burger .brcont .fclm__col-column {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  -moz-column-gap: 32px;
-       column-gap: 32px;
+  column-gap: 32px;
   margin: 0;
   padding: 0;
 }
@@ -882,9 +872,6 @@ button {
   left: -50px;
 }
 
-.vision {
-  display: none;
-}
 .vision .vcont {
   max-width: 1456px;
   margin-left: auto;
@@ -928,4 +915,52 @@ button {
   font-weight: 400;
   font-size: 16px;
   line-height: 22px;
+}
+
+.strategy {
+  background-color: var(--color-accent);
+  padding-top: 140px;
+  padding-bottom: 140px;
+}
+.strategy .stcont {
+  max-width: 1456px;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+}
+.strategy .stcont__title {
+  font-size: 52px;
+  font-weight: 400;
+}
+.strategy .stcont__scroller {
+  margin-top: 60px;
+}
+.strategy .stcont__scroller .scrollerim {
+  margin-left: 401px;
+  display: flex;
+  position: relative;
+  gap: 20px;
+}
+.strategy .stcont__scroller .scrollerim .currentim {
+  width: 595px;
+  height: 520px;
+}
+.strategy .stcont__scroller .scrollerim .nci {
+  margin-bottom: 215px;
+}
+.strategy .stcont__text {
+  position: absolute;
+  bottom: -50px;
+}
+.strategy .stcont__text-title {
+  font-size: 36px;
+  width: 718px;
+  font-weight: 400;
+}
+.strategy .stcont__text-button {
+  display: flex;
+  gap: 10px;
+}
+.strategy .stcont__text-button--title {
+  border-bottom: 1px solid var(--color-white);
 }/*# sourceMappingURL=main-style.min.css.map */

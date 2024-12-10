@@ -47,12 +47,12 @@
             gap: 20px;
             grid-template-rows: repeat(2,1fr);
             display: grid;
-            grid-auto-rows: 349px;
+            
 
-            &__item {
+            &-item {
 
-                height: 349px;
-                grid-auto-rows: 349px;
+                min-height: 349px;
+                
                 background-color: var(--color-gray1);
             }
             .it2 {

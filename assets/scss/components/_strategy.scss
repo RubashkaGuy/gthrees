@@ -1,0 +1,65 @@
+.strategy {
+    background-color: var(--color-accent);
+    padding-top: 140px;
+    padding-bottom: 140px;
+    .stcont {
+        max-width: 1456px;
+        margin-left: auto;
+        margin-right: auto;
+        position: relative;
+        &__title {
+            font-size: 52px;
+            font-weight: 400;
+        }
+        &__scroller {
+            margin-top: 60px;
+            
+            
+            .scrollerim {
+                margin-left: 401px;
+                display: flex;
+                position: relative;
+                gap: 20px;
+                .currentim {
+                    width: 595px;
+                    height: 520px;
+                }    
+                .nci {
+                    margin-bottom: 215px;
+                }
+                &__images {
+                    
+                }
+            }
+
+            .scbar {
+                &__accent {
+
+                }
+            }
+
+
+        }
+
+        &__text {
+            position: absolute;
+            bottom: -50px;
+            &-title {
+                font-size: 36px;
+                width: 718px;
+                font-weight: 400;
+            }
+            &-button {
+                display: flex;
+                gap: 10px;
+                &--title {
+                    border-bottom: 1px solid var(--color-white);
+                }
+                &--image {
+
+                }
+            }
+        }
+        
+    }
+}
