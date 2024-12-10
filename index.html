@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="ru">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -12,6 +13,7 @@
     <link rel="stylesheet" href="/assets/style/main-style.min.css">
     <script defer src="/assets/javascript/application.js"></script>
 </head>
+
 <body class="application">
     <div class="application__template">
         <header class="application__header header" id="header">
@@ -25,7 +27,7 @@
                             <span class="navitem__item-text">Наши услуги</span>
                             <img src="assets/img/icons/arrow-lng.svg" alt="" class="navitem__item-image">
                         </a>
-                        
+
                     </li>
                     <li class="nav__menu-item navitem">
                         <a href="" class="navitem__item">Контакты</a>
@@ -33,7 +35,7 @@
                     <li class="nav__menu-item navitem">
                         <a href="tel:375295462567" class="navitem__item">+375(29)546-25-67</a>
                     </li>
-                </ul>   
+                </ul>
                 <button class="nav__language">
                     <span class="nav__language-text">RU</span>
                     <img src="assets/img/icons/arrow-lng.svg" alt="" class="nav__language-icon">
@@ -49,6 +51,79 @@
         </header>
         <main class="application__main main" id="main">
             <div class="main__content" id="main-content">
+                <section class="burger">
+                    <div class="burger__container brcont">
+                        <div class="brcont__column fclm">
+                            <div class="fclm__col">
+                                <a href="" class="fclm__col-title">УСЛУГИ</a>
+                                <ul class="fclm__col-column">
+                                    <li class="fclm__col-column--text">
+                                        <a href="#!" class="fclm__col-column--textLink">авиаперевозки</a>
+                                    </li>
+                                    <li class="fclm__col-column--text">
+                                        <a href="#!" class="fclm__col-column--textLink">автомобильные перевозки</a>
+                                    </li>
+                                    <li class="fclm__col-column--text">
+                                        <a href="#!" class="fclm__col-column--textLink">мультимодальные перевозки</a>
+                                    </li>
+                                    <li class="fclm__col-column--text">
+                                        <a href="#!" class="fclm__col-column--textLink">железнодорожные перевозки</a>
+                                    </li>
+                                    <li class="fclm__col-column--text">
+                                        <a href="#!" class="fclm__col-column--textLink">перевозки опасных грузов</a>
+                                    </li>
+                                    <li class="fclm__col-column--text">
+                                        <a href="#!" class="fclm__col-column--textLink">перевозки тяжеловесных и негабаритных грузов</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="fclm__comp">
+                                <a href="#!" class="fclm__comp-title">КОМПАНИЯ</a>
+                                <ul class="fclm__comp-column">
+                                    <li class="fclm__comp-column--text">
+                                        <a href="#!" class="fclm__comp-column--textLink">о компании</a>
+                                    </li>
+                                    <li class="fclm__comp-column--text">
+                                        <a href="#!" class="fclm__comp-column--textLink">вакансии</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="brcont__contacts">
+                            <a href="#!" class="brcont__contacts-title">Кнотакты</a>
+                            <div class="brcont__contacts-left bleft">
+                                <div class="bleft__left brleft">
+                                    <h3 class="brleft__title">ОФИС В РЕСПУБЛИКЕ БЕЛАРУСЬ</h3>
+                                    <p class="brleft__subtitle">г. Минск, пер. Козлова, 7Г-7</p>
+                                    <a href="#!" class="brleft__number">Тел: +375 (17) 252-22-25</a>
+                                    <div class="brleft__mail">
+                                        <a href="#!" class="brleft__mail-email">info@ghtrees.com</a>
+                                        <a href="#!" class="brleft__mail-email">sales@ghtrees.com</a>
+                                    </div>
+                                </div>
+                                <div class="bleft__right brright">
+                                    <h3 class="brright__title">ОФИС В РОССИЙСКОЙ ФЕДЕРАЦИИ</h3>
+                                    <div class="brright__adress">
+                                        <p class="brright__adress-subtitle">214013, г. Смоленск</p>
+                                        <p class="brright__adress-subtitle">ул. Памфилова, 5; офис 217</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="brcont__contacts-right bright">
+                                <a href="#!" class="bright__number">+375(17)252-22-25</a>
+                                <div class="bright__mail">
+                                    <h3 class="bright__mail-text">Для сотрудничества</h3>
+                                    <a href="#!" class="bright__mail-mail">info@gthrees.com</a>
+                                </div>
+                                <div class="bright__mail">
+                                    <h3 class="bright__mail-text">Отдел продаж:</h3>
+                                    <a href="#!" class="bright__mail-mail">sales@gthrees.com</a>
+                                </div>
+                            </div>
+                            
+                        </div>
+                    </div>
+                </section>
                 <section class="general">
                     <div class="general__container welcome">
                         <div class="welcome__upper"></div>
@@ -56,22 +131,29 @@
                             <div class="wbot__container wcont">
                                 <img src="assets/img/icons/title.svg" alt="" class="wcont__text">
                                 <div class="wcont__desc">
-                                    <h1 class="wcont__desc-title">ТРАНСПОРТНО — <br> <span class="wcont__desc-title--exped">ЭКСПЕДИЦИОННАЯ</span> <br> <span class="wbot__desc-title--comp">КОМПАНИЯ</span></h1>
+                                    <h1 class="wcont__desc-title">ТРАНСПОРТНО — <br> <span
+                                            class="wcont__desc-title--exped">ЭКСПЕДИЦИОННАЯ</span> <br> <span
+                                            class="wbot__desc-title--comp">КОМПАНИЯ</span></h1>
                                     <div class="wcont__desc-subtitle servicelevel">
-                                        <p class="servicelevel__text">Мы стремимся обеспечить высокий уровень сервиса, предлагая Вам наилучшее решение с точки зрения стоимости, качества и времени.</p>
+                                        <p class="servicelevel__text">Мы стремимся обеспечить высокий уровень сервиса,
+                                            предлагая Вам наилучшее решение с точки зрения стоимости, качества и
+                                            времени.</p>
                                         <a href="#!" class="servicelevel__button">
-                                            <h2 class="servicelevel__button-text">получить консультацию</h2>
-                                            <img src="assets/img/icons/arrow.svg" alt="" class="servicelevel__button-icon">
+                                            <a href="company.html" class="servicelevel__button-text">получить консультацию</a>
+                                            <img src="assets/img/icons/arrow.svg" alt=""
+                                                class="servicelevel__button-icon">
                                         </a>
                                     </div>
                                 </div>
                                 <div class="wcont__buttons wbut">
                                     <div class="wbut__slider">
                                         <a href="" class="wbut__slider-left sldr">
-                                            <img src="assets/img/icons/arrowslider.svg" alt="Стрелка назад" class="wbut__slider-left--arrow warrow">
+                                            <img src="assets/img/icons/arrowslider.svg" alt="Стрелка назад"
+                                                class="wbut__slider-left--arrow warrow">
                                         </a>
                                         <a href="" class="wbut__slider-right warrow sldr">
-                                            <img src="assets/img/icons/arrowslider.svg" alt="Стрелка вперед" class="wbut__slider-right--arrow">
+                                            <img src="assets/img/icons/arrowslider.svg" alt="Стрелка вперед"
+                                                class="wbut__slider-right--arrow">
                                         </a>
                                     </div>
                                     <div class="wbut__social">
@@ -81,21 +163,25 @@
                                     </div>
                                     <div class="wbut__messenger">
                                         <a href="#!" class="wbut__mseenger-link">
-                                            <img src="assets/img/icons/whatsapp.svg" alt="Значок whatsapp" class="wbut__messenger-link--icon">
+                                            <img src="assets/img/icons/whatsapp.svg" alt="Значок whatsapp"
+                                                class="wbut__messenger-link--icon">
                                         </a>
                                         <a href="#!" class="wbut__mseenger-link">
-                                            <img src="assets/img/icons/viber.svg" alt="Значок viber" class="wbut__messenger-link--icon">
+                                            <img src="assets/img/icons/viber.svg" alt="Значок viber"
+                                                class="wbut__messenger-link--icon">
                                         </a>
                                         <a href="#!" class="wbut__mseenger-link">
-                                            <img src="assets/img/icons/skype.svg" alt="Значок skype" class="wbut__messenger-link--icon">
+                                            <img src="assets/img/icons/skype.svg" alt="Значок skype"
+                                                class="wbut__messenger-link--icon">
                                         </a>
                                         <a href="#!" class="wbut__mseenger-link">
-                                            <img src="assets/img/icons/telegram.svg" alt="Значок telegram" class="wbut__messenger-link--icon">
+                                            <img src="assets/img/icons/telegram.svg" alt="Значок telegram"
+                                                class="wbut__messenger-link--icon">
                                         </a>
-                                        
-                                        
-                                        
-                                        
+
+
+
+
                                     </div>
                                 </div>
 
@@ -131,8 +217,11 @@
                     <div class="company__container cmp">
                         <div class="cmp__text">
                             <h2 class="cmp__text-title">О компании</h2>
-                            <p class="cmp__text-subtitle">Наша компания предоставляет широкий спектр услуг по доставке грузов наземным, морским, воздушным транспортом, складской обработке и страхованию грузов. <br> <br>
-                                Основываясь на глубоком понимании специфики различных отраслей, мы применяем индивидуальный подход к потребностям наших клиентов в области логистики.</p>
+                            <p class="cmp__text-subtitle">Наша компания предоставляет широкий спектр услуг по доставке
+                                грузов наземным, морским, воздушным транспортом, складской обработке и страхованию
+                                грузов. <br> <br>
+                                Основываясь на глубоком понимании специфики различных отраслей, мы применяем
+                                индивидуальный подход к потребностям наших клиентов в области логистики.</p>
                         </div>
                         <div class="cmp__map">
                             <div class="cmp__map-dot dot dot1">
@@ -186,7 +275,9 @@
                                 <img src="assets/img/icons/title.svg" alt="Заголовок GTHREES" class="serv__image">
                                 <div class="serv__text">
                                     <h2 class="serv__text-title">Наши услуги</h2>
-                                    <p class="serv__text-subtitle">Мы предлагаем высококачественный и эффективный логистический сервис, применяя индивидуальный подход к каждому нашему клиенту.</p>
+                                    <p class="serv__text-subtitle">Мы предлагаем высококачественный и эффективный
+                                        логистический сервис, применяя индивидуальный подход к каждому нашему клиенту.
+                                    </p>
                                 </div>
                                 <a href="#!" class="serv__link">
                                     <h3 class="serv__link-title">ВСЕ УСЛУГИ</h3>
@@ -207,13 +298,15 @@
                                             </div>
                                         </a>
                                         <a href="#!" class="scrcards__card">
-                                            <img src="assets/img/images/railroad.png" alt="" class="scrcards__card-image">
+                                            <img src="assets/img/images/railroad.png" alt=""
+                                                class="scrcards__card-image">
                                             <div class="scrcards__card-text">
                                                 <h3 class="scrcards__card-text--Title">Железнодорожные перевозки</h3>
                                             </div>
                                         </a>
                                         <a href="#!" class="scrcards__card">
-                                            <img src="assets/img/images/container.png" alt="" class="scrcards__card-image">
+                                            <img src="assets/img/images/container.png" alt=""
+                                                class="scrcards__card-image">
                                             <div class="scrcards__card-text">
                                                 <h3 class="scrcards__card-text--Title">Мультимодальные перевозки</h3>
                                             </div>
@@ -228,6 +321,284 @@
                         </div>
                     </div>
                 </section>
+                <section class="we">
+                    <div class="we__container wecont">
+                        <h2 class="wecont__title">Почему мы</h2>
+                        <div class="wecont__cards">
+                            <div class="wecont__cards-card wcard">
+                                <div class="wcard__nothover">
+                                    <h3 class="wcard__nothover-title">Гарантии сохранности</h3>
+                                    <div class="wcard__nothover-picture">
+                                        <img src="assets/img/icons/c1.svg" alt=""
+                                            class="wcard__nothoveer-picture--icon">
+                                        <img src="assets/img/images/we1.png" alt="Изображение контейнеров"
+                                            class="wcard__nothover-picture--image">
+                                    </div>
+                                    <h3 class="wcard__nothover-number">1</h3>
+                                </div>
+                                <div class="wcard__hover">
+                                    <h3 class="wcard__hover-title">Экологические стандарты</h3>
+                                    <p class="wcard__hover-subtitle">Соблюдаем экологические стандарты качества, отдавая
+                                        им приоритет в работе.</p>
+                                </div>
+                            </div>
+                            <div class="wecont__cards-card wcard">
+                                <div class="wcard__nothover">
+                                    <h3 class="wcard__nothover-title">Экологические стандарты</h3>
+                                    <div class="wcard__nothover-picture">
+                                        <img src="assets/img/icons/c2.svg" alt=""
+                                            class="wcard__nothoveer-picture--icon">
+                                        <img src="assets/img/images/we2.png" alt="Изображение контейнеров"
+                                            class="wcard__nothover-picture--image">
+                                    </div>
+                                    <h3 class="wcard__nothover-number">2</h3>
+                                </div>
+                                <div class="wcard__hover">
+                                    <h3 class="wcard__hover-title">Экологические стандарты</h3>
+                                    <p class="wcard__hover-subtitle">Соблюдаем экологические стандарты качества, отдавая
+                                        им приоритет в работе.</p>
+                                </div>
+                            </div>
+                            <div class="wecont__cards-card wcard">
+                                <div class="wcard__nothover">
+                                    <h3 class="wcard__nothover-title">Индивидуальный подход</h3>
+                                    <div class="wcard__nothover-picture">
+                                        <img src="assets/img/icons/c3.svg" alt=""
+                                            class="wcard__nothoveer-picture--icon">
+                                        <img src="assets/img/images/we3.png" alt="Изображение контейнеров"
+                                            class="wcard__nothover-picture--image">
+                                    </div>
+                                    <h3 class="wcard__nothover-number">3</h3>
+                                </div>
+                                <div class="wcard__hover">
+                                    <h3 class="wcard__hover-title">Экологические стандарты</h3>
+                                    <p class="wcard__hover-subtitle">Соблюдаем экологические стандарты качества, отдавая
+                                        им приоритет в работе.</p>
+                                </div>
+                            </div>
+                            <div class="wecont__cards-card wcard">
+                                <div class="wcard__nothover">
+                                    <h3 class="wcard__nothover-title">Высокое качество услуг</h3>
+                                    <div class="wcard__nothover-picture">
+                                        <img src="assets/img/icons/c4.svg" alt=""
+                                            class="wcard__nothoveer-picture--icon">
+                                        <img src="assets/img/images/we4.png" alt="Изображение контейнеров"
+                                            class="wcard__nothover-picture--image">
+                                    </div>
+                                    <h3 class="wcard__nothover-number">4</h3>
+                                </div>
+                                <div class="wcard__hover">
+                                    <h3 class="wcard__hover-title">Экологические стандарты</h3>
+                                    <p class="wcard__hover-subtitle">Соблюдаем экологические стандарты качества, отдавая
+                                        им приоритет в работе.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="partners">
+                    <div class="partners__container pcont">
+                        <div class="pcont__text">
+                            <h2 class="pcont__text-title">Партнеры</h2>
+                            <p class="pcont__text-subtitle">Благодаря тесному сотрудничеству с лучшими транспортными
+                                компаниями мы способны предложить качественный и эффективный логистический сервис,
+                                применяя индивидуальный подход к клиентам.</p>
+                        </div>
+                        <div class="pcont__nav">
+                            <a href="" class="pcont__nav-item highlited">Химия</a>
+                            <a href="" class="pcont__nav-item">Машиностроение</a>
+                            <a href="" class="pcont__nav-item">Металлургия</a>
+                            <a href="" class="pcont__nav-item">Фармацевтика</a>
+                            <a href="" class="pcont__nav-item">Продукты питания</a>
+                            <a href="" class="pcont__nav-item">Строительство</a>
+                            <a href="" class="pcont__nav-item">Деревообработка</a>
+                            <a href="" class="pcont__nav-item">Одежда</a>
+                        </div>
+                        <div class="pcont__col">
+                            <div class="pcont__col-item it1">
+
+                            </div>
+                            <div class="pcont__col-item it2">
+                                <img src="assets/img/icons/segezha.svg" alt="Логотип Segezha group" class="pcont__col-item--image">
+                            </div>
+                            <div class="pcont__col-item it3">
+                                <img src="assets/img/icons/technonikol.svg" alt="Логотип Технониколь" class="pcont__col-item--image">
+                            </div>
+                            <div class="pcont__col-item i4">
+                                <img src="assets/img/icons/redoct.svg" alt="Логотип Red October" class="pcont__col-item--iamge">
+                            </div>
+                            <div class="pcont__col-item it5">
+                                <img src="assets/img/icons/technonikol.svg" alt="Логотип Технониколь" class="pcont__col-item--image">
+                            </div>
+                            <div class="pcont__col-item it6">
+                                <h3 class="pcont__col-item--text">СТАТЬ ПАРТНЕРОМ</h3>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="news">
+                    <div class="news__cont ncont">
+                        <h2 class="ncont__title">Новости</h2>
+                        <div class="ncont__news">
+                            <div class="ncont__news-cards necards">
+                                <div class="necards__items">
+                                    <a href="#!" class="necards__items-item">
+                                        <h3 class="necards__items-item--title">Как застрахован груз на международных грузоперевозках</h3>
+                                        <img src="assets/img/icons/arrow.svg" alt="" class="necards__items-item--icon">
+                                    </a>
+                                    <a href="#!" class="necards__items-item">
+                                        <h3 class="necards__items-item--title">Как застрахован груз на международных грузоперевозках</h3>
+                                        <img src="assets/img/icons/arrow.svg" alt="" class="necards__items-item--icon">
+                                    </a>
+                                    <a href="#!" class="necards__items-item">
+                                        <h3 class="necards__items-item--title">Как застрахован груз на международных грузоперевозках</h3>
+                                        <img src="assets/img/icons/arrow.svg" alt="" class="necards__items-item--icon">
+                                    </a>
+                                    <a href="#!" class="necards__items-item">
+                                        <h3 class="necards__items-item--title">Как застрахован груз на международных грузоперевозках</h3>
+                                        <img src="assets/img/icons/arrow.svg" alt="" class="necards__items-item--icon">
+                                    </a>
+                                    <a href="" class="necards__items-link">
+                                        <h3 class="necards__items-link--title">ВСЕ УСЛУГИ</h3>
+                                        <img src="assets/img/icons/arrow.svg" alt="" class="necards__items-link--icon">
+                                    </a>
+                                </div>
+                            </div>
+                            <img src="assets/img/images/ship.jpg" alt="" class="ncont__news-image">
+                        </div>
+                    </div>
+                </section>
+                <section class="faq">
+                    <div class="faq__container facont">
+                        <h2 class="facont__title">Часто спрашивают</h2>
+                        <div class="facont__items">
+                            <div class="facont__items-accordeon accord">
+                                <a href="" class="accord__title aitem1">
+                                    <h3 class="accord__title-text">Как застрахован груз на международных перевозках?</h3>
+                                    <img src="assets/img/icons/arrow.svg" alt="" class="accord__title-icon">
+                                    
+                                </a>
+                                <div class="accord__info ainfo1">
+                                    <h3 class="accord__info-text">
+                                        Наша компания работает на рынке пять лет и за это время мы разработали чётко отлаженные подходы и стандарты по перевозки грузов любым видом транспорта в любом направлении. При этом всегда учитываются все требования и выдвигаемые условия каждого клиента. <br> <br>
+                                        Наши специалисты используют индивидуальный подход к каждому клиенту и поэтому все нюансы выясняются еще на стадии оформления заявки на оказание услуги и предварительных консультаций в удаленном режиме. <br> <br>
+                                        Осуществляются грузоперевозки исключительно в соответствии с законодательными нормами, с составлением договора, имеющего юридическую силу.
+                                    </h3>
+                                </div>
+                            </div>
+                            <div class="facont__items-accordeon accord">
+                                <a href="" class="accord__title aitem1">
+                                    <h3 class="accord__title-text">Как застрахован груз на международных перевозках?</h3>
+                                    <img src="assets/img/icons/arrow.svg" alt="" class="accord__title-icon">
+                                </a>
+                                <div class="accord__info ainfo2">
+                                    <h3 class="accord__info-text">
+                                        Наша компания работает на рынке пять лет и за это время мы разработали чётко отлаженные подходы и стандарты по перевозки грузов любым видом транспорта в любом направлении. При этом всегда учитываются все требования и выдвигаемые условия каждого клиента.
+                                        Наши специалисты используют индивидуальный подход к каждому клиенту и поэтому все нюансы выясняются еще на стадии оформления заявки на оказание услуги и предварительных консультаций в удаленном режиме.
+                                        Осуществляются грузоперевозки исключительно в соответствии с законодательными нормами, с составлением договора, имеющего юридическую силу.
+                                    </h3>
+                                </div>
+                            </div>
+                            <div class="facont__items-accordeon accord">
+                                <a href="" class="accord__title aitem1">
+                                    <h3 class="accord__title-text">Как застрахован груз на международных перевозках?</h3>
+                                    <img src="assets/img/icons/arrow.svg" alt="" class="accord__title-icon">
+                                </a>
+                                <div class="accord__info ainfo3">
+                                    <h3 class="accord__info-text">
+                                        Наша компания работает на рынке пять лет и за это время мы разработали чётко отлаженные подходы и стандарты по перевозки грузов любым видом транспорта в любом направлении. При этом всегда учитываются все требования и выдвигаемые условия каждого клиента.
+                                        Наши специалисты используют индивидуальный подход к каждому клиенту и поэтому все нюансы выясняются еще на стадии оформления заявки на оказание услуги и предварительных консультаций в удаленном режиме.
+                                        Осуществляются грузоперевозки исключительно в соответствии с законодательными нормами, с составлением договора, имеющего юридическую силу.
+                                    </h3>
+                                </div>
+                            </div>
+                            <div class="facont__items-accordeon accord">
+                                <a href="" class="accord__title aitem1">
+                                    <h3 class="accord__title-text">Как застрахован груз на международных перевозках?</h3>
+                                    <img src="assets/img/icons/arrow.svg" alt="" class="accord__title-icon">
+                                </a>
+                                <div class="accord__info ainfo4">
+                                    <h3 class="accord__info-text">
+                                        Наша компания работает на рынке пять лет и за это время мы разработали чётко отлаженные подходы и стандарты по перевозки грузов любым видом транспорта в любом направлении. При этом всегда учитываются все требования и выдвигаемые условия каждого клиента.
+                                        Наши специалисты используют индивидуальный подход к каждому клиенту и поэтому все нюансы выясняются еще на стадии оформления заявки на оказание услуги и предварительных консультаций в удаленном режиме.
+                                        Осуществляются грузоперевозки исключительно в соответствии с законодательными нормами, с составлением договора, имеющего юридическую силу.
+                                    </h3>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="request">
+                    <div class="request__container rcont">
+                        <h2 class="rcont__title">Связаться с нами</h2>
+                        <div class="rcont__request">
+                            <h3 class="rcont__request-text">Оставьте заявку и наш менеджер свяжется с вами <span class="rcont__request-text--highlited">в ближайшее время</span></h3>
+                            <div class="rcont__request-form rform">
+                                <div class="rform__inputs first">
+                                    <div class="rform__input-container rinput">
+                                        <input type="text" placeholder="ФИО" class="rinput__input">
+                                    </div>
+                                    <div class="rform__input-container rinput">
+                                        <input type="text" placeholder="Телефон" class="rinput__input">
+                                    </div>
+                                </div>
+                                <div class="rform__inputs second">
+                                    <div class="rform__input-container rinput">
+                                        <input type="text" placeholder="E-mail" class="rinput__input">
+                                    </div>
+                                    <div class="rform__inputs-container selector rinput">
+                                        <p class="selector__text">Услуга</p>
+                                        <div class="selector__text-selector slt">
+                                            <h2 class="slt__title">Автоперевозки</h2>
+                                            <img src="assets/img/icons/arrow-down.svg" alt="" class="slt__icon">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="rform__inputs message">
+                                    <div class="rform__inputs-container rinput">
+                                        <input type="text" placeholder="Сообщение" class="rinput__message">
+                                    </div>
+                                </div>
+                                <a href="#!" class="rform__button">
+                                    <h3 class="rform__button-text">ОТПРАВИТЬ ЗАЯВКУ</h3>
+                                    <img src="assets/img/icons/arrow.svg" alt="" class="rform__button-icon">
+                                </a>
+                        </div>
+                    </div>
+                    <div class="rcont__footer rfoot">
+                        <div class="rfoot__top">
+                            <div class="rfoot__top-coop rcoop">
+                                <h3 class="rcoop__title">Для сотрудничества</h3>
+                                <a href="mail: info@gthrees.com" class="rcoop__subtitle">info@gthrees.com</a>
+                            </div>
+                            <div class="rfoot__top-num rnum">
+                                <a href="#!" class="rnum__button">
+                                    ПОДПИСАТЬСЯ
+                                </a>
+                                <div class="rnum__number">
+                                    <a href="#!" class="rnum__number-text">+375(17)252-22-25</a>
+                                </div>
+                                
+                            </div>
+                            <div class="rfoot__top-sell rsell">
+                                <h3 class="rsell__title">Отдел продаж:</h3>
+                                <a href="#!" class="rsell__subtitle">sales@gthrees.com</a>
+                            </div>
+                        </div>
+                        <div class="rfoot__bottom rbot">
+                            <div class="rbot__copyright">
+                                <h3 class="rbot__copyright-title">© 2023, GTHREES</h3>
+                            </div>
+                            <div class="rbot__ref">
+                                <h3 class="rbot__ref-text">Разработано в</h3>
+                                <img src="assets/img/icons/likeit.svg" alt="" class="rbot__ref-image">
+                            </div>
+                        </div>
+                        
+                    </div>
+                    <img src="assets/img/icons/title.svg" alt="" class="rcont__logo">
+                    </div>
+                </section>
             </div>
         </main>
         <footer class="application__footer footer">
@@ -235,4 +606,5 @@
         </footer>
     </div>
 </body>
+
 </html>

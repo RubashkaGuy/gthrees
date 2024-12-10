@@ -1,0 +1,28 @@
+.objectives {
+    .obcont {
+        max-width: 1456px;
+        margin-left: auto;
+        margin-right: 156px;
+        margin-top: 140px;
+        margin-bottom: 140px;
+        &__text {
+            display: flex;
+            align-items: center;
+            margin-left: 746px;
+            position: relative;
+            &-title {
+                color: var(--color-text);
+                font-weight: 400;
+                z-index: 20;
+                width: 664px;
+                
+
+            }
+            &-image {
+                position: absolute;
+                left: -50px;
+            }
+            
+        }
+    }
+}

@@ -1,0 +1,185 @@
+.request {
+    background-color: var(--color-accent);
+    
+    .rcont {
+        
+        position: relative;
+        max-width: 1456px;
+        margin-right: auto;
+        margin-left: auto;
+        padding-top: 140px;
+        padding-bottom: 36px;
+        &__title {
+            font-size: 52px;
+            font-weight: 400;
+
+        }
+        &__request {
+            display: flex;
+            &-text {
+                font-size: 36px;
+                font-weight: 400;
+                line-height: 50px;
+                width: 590px;
+
+            }
+            .rform {
+                margin-left: 148px;
+                .second {
+                    margin-top: 63px;
+                }
+                &__inputs {
+                    display: grid;
+                    grid-template-columns: repeat(2,1fr);
+                    gap: 20px;
+                    align-items: stretch;
+                    
+                    .rinput {
+                        &__input {
+                            background: none;
+                            border: none;
+                            border-bottom: solid 1px var(--color-white);
+                            outline: none;
+                            padding-bottom: 10px;
+                            caret-color: var(--color-white);
+                            color: var(--color-white);
+                            &::placeholder {
+                                color: var(--color-gray2);
+                                font-size: 16px;
+                                font-weight: 400;
+                                line-height: 22px;
+                            }
+                            width: 349px;
+                            
+                        }
+                        .selector {
+                            
+                            &__text {
+                                color: var(--color-gray2);
+                                margin: 0;    
+                                font-size: 12px;
+                                
+                            }
+
+                        }
+                        .slt {
+
+                            display: flex;
+                            justify-content: space-between;
+                            border-bottom: solid 1px var(--color-white);
+                            &:hover {
+                                cursor: pointer;
+                            }
+                            &__title {
+                                font-size: 16px;
+                                font-weight: 400;
+                                margin: 0;
+                                margin-top: 8px;
+                                
+                            }
+                            
+                        }
+                    }
+                }
+
+                &__inputs {
+                    
+                }
+            }
+
+
+        }
+
+
+        .rfoot {
+            
+            margin-top: 210px;
+            position: relative;
+            z-index: 50;
+            &__top {
+                display: flex;
+                justify-content:space-between;
+                border-bottom: solid 1px var(--color-white);
+                padding-bottom: 34px;
+                .rcoop {
+                    &__title {
+                        font-size: 18px;
+                        font-weight: 400;
+                        color: var(--color-accent-second);
+                        text-align: left;
+
+                    }
+                    &__subtitle {
+                        color: var(--color-gray2);
+                        font-size: 24px;
+                        font-weight: 400;
+
+                    }
+                }
+                .rsell {
+                    &__title {
+                        font-size: 18px;
+                        font-weight: 400;
+                        color: var(--color-accent-second);
+                        text-align: right;
+
+                    }
+                    &__subtitle {
+                        color: var(--color-gray2);
+                        font-size: 24px;
+                        font-weight: 400;
+                        
+
+                    }
+
+                }
+                .rnum {
+                    
+                    text-align: center;
+                    position: relative;
+                    &__button {
+                        border-bottom: solid 1px var(--color-white);
+                        font-size: 18px;
+                        font-weight: 500;
+                        width: 149px;
+                        
+                    }
+                    &__number {
+                        margin-top: 34px;
+                        font-weight: 400;
+                        font-size: 36px;
+                        
+                    }
+
+                }
+            }
+            .rbot {
+
+                display: flex;
+                justify-content: space-between;
+                &__copyright {
+                    &-title {
+                        font-size: 18px;
+                        font-weight: 400;
+                    }
+
+                }
+                &__ref {
+                    display: flex;
+                    gap: 14px;
+                }
+            }
+            
+
+        }
+        &__logo {
+            filter: brightness(75%);
+            z-index: 0;
+            bottom: -80px;
+            position: absolute;
+            overflow: hidden;
+        }
+        
+    }
+}
+

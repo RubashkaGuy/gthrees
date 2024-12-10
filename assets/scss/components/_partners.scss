@@ -1,0 +1,71 @@
+.partners {
+    margin-top: 140px;
+    margin-bottom: 140px;
+    .pcont {
+        width: 100%;
+        max-width: 1456px;
+        margin-right: auto;
+        margin-left: auto;
+        &__text {
+            &-title {
+                font-weight: 400;
+                font-size: 52px;
+                color: var(--color-accent);
+            }
+            &-subtitle {
+                font-size: 24px;
+                font-weight: 400;
+                line-height: 33px;
+                color: var(--color-text);
+                width: 1086px;
+                margin-left: 369px;
+                margin-top: 49px;
+            }
+        }
+
+        &__nav {
+            display: flex;
+            color: var(--color-accent);
+            margin-top: 60px;
+            gap: 54px;
+            &-item {
+                font-weight: 600;
+                font-size: 18px;
+                line-height: 25px;
+                color: var(--color-gray4);
+
+            }
+            .highlited {
+                color: var(--color-accent);
+                border-bottom: 3px solid;
+            }
+        }
+
+        &__col {
+            margin-top: 40px;
+            grid-template-columns: repeat(4,1fr);
+            gap: 20px;
+            grid-template-rows: repeat(2,1fr);
+            display: grid;
+            grid-auto-rows: 349px;
+
+            &__item {
+
+                height: 349px;
+                grid-auto-rows: 349px;
+                background-color: var(--color-gray1);
+            }
+            .it2 {
+                
+            }
+            .it1 {
+                background-image: url(/assets/img/images/chemistry.jpeg);
+                background-position: center;
+                object-fit: cover;
+                grid-column: span 2;
+                
+            }
+        }
+
+    }
+}

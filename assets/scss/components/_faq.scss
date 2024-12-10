@@ -1,0 +1,55 @@
+.faq {
+    margin-top: 140px;
+    margin-bottom: 140px;
+    .facont {
+        max-width: 1456px;
+        margin-left: auto;
+        margin-right: auto;
+        &__title {
+            font-size: 52px;
+            color: var(--color-accent);
+            font-weight: 400;
+            margin-bottom: 60px;
+            
+        }
+        &__items {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            .accord {
+                
+                &__title {
+                    padding-right: 40px;
+                    padding-left: 40px;
+                    
+                    display: flex;
+                    background-color: var(--color-gray);
+                    border-radius: 4px;
+                    justify-content: space-between;
+                    &-text {
+                        color: var(--color-text);
+                        margin-top: 32px;
+                        margin-bottom: 32px;    
+                    }
+                    &-icon {
+                        
+                    }
+                }
+                &__info {
+                    display: none;
+                    padding-right: 40px;
+                    padding-left: 40px;
+                    &-text {
+                        color: var(--color-text);
+                        font-size: 16px;
+                        font-weight: 400;
+                        line-height: 22px;
+                    }
+                }
+                .ainfo1 {
+                    display: block;
+                }
+            }
+        }
+    }
+}

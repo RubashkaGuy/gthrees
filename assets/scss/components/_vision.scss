@@ -1,0 +1,56 @@
+.vision {
+    display: none;
+    .vcont {
+        max-width: 1456px;
+        margin-left: auto;
+        margin-right: auto;    
+        &__title {
+            font-size: 52px;
+            font-weight: 400;
+            color: var(--color-accent);
+        }
+        &__text {
+            margin-left: 355px;
+            margin-top: 60px;
+            margin-bottom: 40px;
+            color: var(--color-text);
+            align-items: start;
+            &-title {
+                font-size: 26px;
+                font-weight: 500;
+            }
+            &-subtitle {
+                font-size: 16px;
+                line-height: 22px;
+            }
+        }
+        &__images{ 
+            &-small {
+                
+            }
+        }
+        &__target {
+            margin-top: 40px;
+            margin-left: 355px;
+            color: var(--color-text);
+            &-title {
+                margin-bottom: 30px;
+                font-size: 26px;
+                font-weight: 500;
+
+            }
+            &-subtitle {
+                display: flex;
+                &--text {
+                    font-weight: 400;
+                    font-size: 16px;
+                    line-height: 22px;
+                    
+                }
+
+            }
+            margin-bottom: 140px;
+        }
+
+    }
+}

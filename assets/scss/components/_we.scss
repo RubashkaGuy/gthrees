@@ -1,0 +1,46 @@
+.we {
+    .wecont {
+        max-width: 1456px;
+        margin-left: auto;
+        margin-right: auto;
+        &__title {
+
+        }
+        &__cards {
+            display: grid;
+            grid-template-columns: repeat(2,1fr);
+            grid-row: 1 / 3;
+            .wcard {
+                &__hover {
+                    display: none;
+                }
+                &__nothover {
+                    width: 472px;
+                    height: 472px;
+                    background: linear-gradient(135deg, #09325B 0%, rgba(69, 99, 233, 0.3) 100%), #09325B;
+                    border-radius: 4px;
+                    &-picture {
+                        position: relative;
+                        align-items: center;
+                        justify-content: center;
+                        display: flex;
+                        
+                        &--icon {
+                            
+                        }
+                        &--image {
+                            
+                            
+                        }
+                    }
+                }
+
+
+
+            }
+        }
+    }
+}
+
+/* Card */
+
