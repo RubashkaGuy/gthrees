@@ -718,6 +718,11 @@ button {
 .request .rcont .rfoot .rbot__ref {
   display: flex;
   gap: 14px;
+  align-items: center;
+}
+.request .rcont .rfoot .rbot__ref-image {
+  height: 20px;
+  width: 80px;
 }
 .request .rcont__logo {
   filter: brightness(75%);
