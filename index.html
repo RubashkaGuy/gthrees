@@ -12,6 +12,8 @@
     <link rel="stylesheet" href="/assets/style/normalize.min.css">
     <link rel="stylesheet" href="/assets/style/main-style.min.css">
     <script defer src="/assets/javascript/application.js"></script>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
 </head>
 
 <body class="application">
@@ -129,12 +131,12 @@
                         <div class="welcome__upper"></div>
                         <div class="welcome__bottom wbot">
                             <div class="wbot__container wcont">
-                                <img src="assets/img/icons/title.svg" alt="" class="wcont__text">
+                                <img src="assets/img/icons/title.svg" alt="" class="wcont__text" data-aos="zoom-in" data-aos-duration="1200">
                                 <div class="wcont__desc">
-                                    <h1 class="wcont__desc-title">ТРАНСПОРТНО — <br> <span
+                                    <h1 class="wcont__desc-title" data-aos="fade-up" data-aos-duration="1200">ТРАНСПОРТНО — <br> <span
                                             class="wcont__desc-title--exped">ЭКСПЕДИЦИОННАЯ</span> <br> <span
                                             class="wbot__desc-title--comp">КОМПАНИЯ</span></h1>
-                                    <div class="wcont__desc-subtitle servicelevel">
+                                    <div class="wcont__desc-subtitle servicelevel" data-aos="fade-up" data-aos-duration="1200">
                                         <p class="servicelevel__text">Мы стремимся обеспечить высокий уровень сервиса,
                                             предлагая Вам наилучшее решение с точки зрения стоимости, качества и
                                             времени.</p>
@@ -424,14 +426,17 @@
                             <div class="pcont__col-item it3">
                                 <img src="assets/img/icons/technonikol.svg" alt="Логотип Технониколь" class="pcont__col-item--image">
                             </div>
-                            <div class="pcont__col-item i4">
+                            <div class="pcont__col-item it4">
                                 <img src="assets/img/icons/redoct.svg" alt="Логотип Red October" class="pcont__col-item--iamge">
                             </div>
                             <div class="pcont__col-item it5">
                                 <img src="assets/img/icons/technonikol.svg" alt="Логотип Технониколь" class="pcont__col-item--image">
                             </div>
                             <div class="pcont__col-item it6">
-                                <h3 class="pcont__col-item--text">СТАТЬ ПАРТНЕРОМ</h3>
+                                <div class="pcont__col-item--container bubilda">
+                                    <h3 class="bubilda__text">СТАТЬ ПАРТНЕРОМ</h3>
+                                    <img src="assets/img/icons/arrow.svg" alt="" class="bubilda__image">
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -606,5 +611,8 @@
         </footer>
     </div>
 </body>
+<script>
+    AOS.init();
+</script>
 
 </html>

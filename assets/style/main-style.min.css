@@ -310,15 +310,28 @@ button {
 }
 .company .cmp__map .dot__text {
   background-color: var(--color-white);
+  gap: 10px;
+  border-top-left-radius: 6px;
+  border-bottom-left-radius: 6px;
+  box-shadow: 0px 2px 8px rgba(76, 123, 135, 0.2);
 }
 .company .cmp__map .dot__text-title {
   font-weight: 700;
   font-size: 16px;
   color: var(--color-black);
 }
+.company .cmp__map .dot__text-subtitle {
+  font-size: 14px;
+  color: var(--color-text);
+  font-weight: 500;
+}
 .company .cmp__map .dot1 {
-  left: 360px;
-  transform: translate(-10px, 100px);
+  left: 150px;
+  top: 5px;
+  transform: translate(-21px, 100px);
+}
+.company .cmp__map .dot1__text {
+  width: 113px;
 }
 .company .cmp__map-map {
   margin-top: 60px;
@@ -481,11 +494,62 @@ button {
   min-height: 349px;
   background-color: var(--color-gray1);
 }
+.partners .pcont__col .it2 {
+  grid-column: span 1;
+  height: 349px;
+  display: flex;
+  align-items: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+.partners .pcont__col .it3 {
+  grid-column: span 1;
+  height: 349px;
+  display: flex;
+  align-items: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+.partners .pcont__col .it4 {
+  grid-column: span 1;
+  height: 349px;
+  display: flex;
+  align-items: center;
+  margin-left: auto;
+  margin-right: auto;
+}
 .partners .pcont__col .it1 {
   background-image: url(/assets/img/images/chemistry.jpeg);
   background-position: center;
   object-fit: cover;
   grid-column: span 2;
+}
+.partners .pcont__col .it5 {
+  grid-column: span 2;
+  height: 349px;
+  display: flex;
+  align-items: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+.partners .pcont__col .it6 {
+  background-color: var(--color-accent-second);
+  display: flex;
+  align-items: center;
+  max-width: 349px;
+  gap: 10px;
+}
+.partners .pcont__col .bubilda {
+  gap: 10px;
+  margin-left: auto;
+  display: flex;
+  margin-top: 294px;
+}
+.partners .pcont__col .bubilda__text {
+  font-size: 18px;
+  font-weight: 500;
+  border-bottom: solid 1px var(--color-accent);
+  color: var(--color-accent);
 }
 
 .news {

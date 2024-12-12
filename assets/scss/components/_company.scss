@@ -27,20 +27,32 @@
                 position: absolute;
                 &__text {
                     background-color: var(--color-white);
-                    
+                    gap: 10px;
+                    border-top-left-radius: 6px;
+                    border-bottom-left-radius: 6px;
+                    box-shadow: 0px 2px 8px rgba(76, 123, 135, 0.2);
                     &-title {
                         font-weight: 700;
                         font-size: 16px;
                         color: var(--color-black);
                     }
                     &-subtitle {
-
+                        font-size: 14px;
+                        color: var(--color-text);
+                        font-weight: 500;
+                        
                     }
                 }
             }
             .dot1 {
-                left: 360px;
-                transform: translate(-10px,100px);
+                
+                left: 150px;
+                top: 5px;
+                transform: translate(-21px,100px);
+                &__text {
+                    width: 113px;
+                    
+                }
             }
             &-map {
                 margin-top: 60px;
@@ -61,3 +73,6 @@
         }
     }
 }
+
+
+
