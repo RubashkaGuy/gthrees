@@ -1,0 +1,93 @@
+.servitems {
+    .sercont {
+        max-width: 1456px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 140px;
+        margin-bottom: 140px;
+        &__title {
+            color: var(--color-accent);
+            font-size: 48px;
+            font-weight: 400;
+        }
+        .srcards {
+            display: grid;
+            grid-template-columns: repeat(3,1fr);
+            grid-template-rows: repeat(1,3fr);
+            gap: 20px;
+            &__card {
+                position: relative;
+                &:hover {
+                    .srdef {
+                        display: none;
+
+                        
+                    }
+                    .srhov {
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: space-between;
+                        cursor: pointer;
+                    }
+                }
+                .srdef {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-between;
+                    background: linear-gradient(135deg, #09325B 0%, rgba(69, 99, 233, 0.3) 100%), #09325B;
+                    border-radius: 4px;
+                    max-width: 472px;
+                    height: 502px;
+                    padding: 30px;
+                    &__title {
+                        font-size: 26px;
+                        font-weight: 500;
+                    }
+                    &__image {
+                        max-width: 412px;
+                        max-height: 220px;
+                        min-height: 220px;
+                        
+                        &-image {
+
+                            object-fit: cover;
+                            width: 412px;
+                            height: 220px;
+                        }
+                        
+                    }
+
+                }
+                .srhov {
+                    border-radius: 4px;
+                    
+                    background: linear-gradient(359.22deg, #003B77 0.62%, rgba(0, 59, 119, 0.3) 99.28%), url('/assets/img/images/plane.jpg');
+                    background-position: left;
+                    background-size: cover;
+                    max-width: 472px;
+                    height: 502px;
+                    display: none;
+                    padding: 30px;
+                    &__title {
+                        font-size: 26px;
+                        font-weight: 500;
+
+                    }
+                    &__subtitle {
+                        font-weight: 400;
+                        font-size: 16px;
+                        line-height: 22px;
+                    }
+                    
+
+                }
+            }
+        }
+    }
+}
+
+
+
+/* BG */
+
+/* Ton */

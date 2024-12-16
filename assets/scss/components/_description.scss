@@ -1,0 +1,29 @@
+.description {
+    &__container {
+        max-width: 1456px;
+        margin-right: auto;
+        margin-left: auto;
+        margin-top: 140px;
+        margin-bottom: 140px;
+        &-title {
+            color: var(--color-accent);
+            font-size: 52px;
+            font-weight: 400;
+
+        }
+        &-subtitle {
+            color: var(--color-text);
+            font-size: 24px;
+            font-weight: 400;
+            line-height: 33px;
+            margin-left: 369px;
+        }
+
+
+    }
+
+
+
+
+
+}

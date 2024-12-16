@@ -2,14 +2,15 @@
     .obcont {
         max-width: 1456px;
         margin-left: auto;
-        margin-right: 156px;
+        margin-right: auto;
         margin-top: 140px;
         margin-bottom: 140px;
         &__text {
             display: flex;
             align-items: center;
-            margin-left: 746px;
+            margin-left: 846px;
             position: relative;
+            
             &-title {
                 color: var(--color-text);
                 font-weight: 400;

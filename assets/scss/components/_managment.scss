@@ -1,0 +1,80 @@
+.managment {
+    
+    .macont {
+        
+        min-width: 1688px;    
+        margin-left: 232px;
+        margin-bottom: 140px;
+        margin-top: 140px;
+        &__title {
+            font-size: 52px;
+            font-weight: 400;
+            color: var(--color-accent);    
+        }
+        .manag {
+            height: 758px;
+            border-top-left-radius: 4px;
+            border-bottom-left-radius: 4px;
+            display: flex;
+            position: relative;
+            background-color: var(--color-accent);
+            &__line {
+                position: absolute;
+                left: 435px;
+                z-index: 2;
+                top: 20px;
+                &-text {
+                    border-bottom: solid 1px var(--color-white);
+                    min-width: 1021px;
+                    padding-bottom: 12px;
+                    font-weight: 500;
+                    font-size: 14px;
+                    
+                }
+            }
+            &__photo {
+                z-index: 0;
+                position: relative;
+                &-text {
+                    position: absolute;
+                    bottom: 0;
+                    width: 169px;
+                    left: 40px;
+                }
+            }
+            &__info {
+
+                margin-top: 120px;
+                margin-left: 20px;
+                &-name {
+                  font-size: 48px;  
+                  line-height: 37px;
+                  font-weight: 600;
+
+                  
+                    
+                }
+                .mantext {
+                    
+                    display: flex;
+                    &__quot {
+                        margin-bottom: auto;
+                        margin-top: 18px;
+                        margin-right: 19px;
+                    }
+                    &__text {
+                        font-size: 16px;
+                        font-weight: 400;
+                        line-height: 22px;
+                        width: 768px;
+                    }
+                }
+                &-sign {
+                    width: 364px;
+                    margin-left: 477px;
+                    margin-top: 122px;
+                }
+            }
+        }
+    }
+}
