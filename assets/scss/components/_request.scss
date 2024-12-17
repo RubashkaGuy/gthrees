@@ -1,5 +1,8 @@
 .request {
-    background-color: var(--color-accent);
+    background: linear-gradient(180.59deg, #002A55 10.72%, rgba(0, 42, 85, 0) 60.06%), linear-gradient(0.11deg, #002A55 13.56%, rgba(12, 37, 94, 0) 59.08%), linear-gradient(90.27deg, #0C255E 0.46%, rgba(69, 99, 233, 0.69) 52.3%, rgba(12, 37, 94, 0.16) 99.99%), #0C255E url('/assets/img/images/containers.jpg');
+    
+    background-position: center;
+    background-size: cover;
     
     .rcont {
         
@@ -27,6 +30,7 @@
                 margin-left: 148px;
                 .second {
                     margin-top: 63px;
+                    position: relative;
                 }
                 &__inputs {
                     display: grid;
@@ -54,19 +58,23 @@
                         }
                         .selector {
                             
+
                             &__text {
                                 color: var(--color-gray2);
                                 margin: 0;    
                                 font-size: 12px;
-                                
+                                position: absolute;
+                                bottom: 30px;
+                                    
                             }
 
                         }
                         .slt {
-
+                            
                             display: flex;
                             justify-content: space-between;
                             border-bottom: solid 1px var(--color-white);
+                            padding-bottom: 3px;
                             &:hover {
                                 cursor: pointer;
                             }
@@ -79,11 +87,25 @@
                             }
                             
                         }
+
                     }
                 }
 
                 &__inputs {
-                    
+                    &__message{ 
+                        
+                    }
+                }
+
+                &__button {
+                    padding-top: 40px;
+                    display: flex;
+                    gap: 10px;
+                    &-text {
+                        border-bottom: solid 1px var(--color-white);
+                        
+                        margin-left: auto;
+                    }
                 }
             }
 
@@ -177,6 +199,7 @@
             
 
         }
+        overflow: hidden;
         &__logo {
             filter: brightness(75%);
             z-index: 0;
@@ -189,3 +212,163 @@
     }
 }
 
+
+
+
+
+.message {
+    grid-row: span 2;
+    width: max-content;
+    .rinput {
+        width: max-content;
+        &__message {
+            
+            background: none;
+            border: none;
+            border-bottom: solid 1px var(--color-gray2);
+        }
+    }
+}
+
+
+
+
+
+/* XXL 2 */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.request {
+    .rnfoot {
+        padding-top: 222px;
+        max-width: 1456px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 210px;
+        position: relative;
+        z-index: 50;
+
+        &__top {
+            display: flex;
+            justify-content: space-between;
+            border-bottom: solid 1px var(--color-white);
+            padding-bottom: 34px;
+
+            .rcoop {
+                &__title {
+                    font-size: 18px;
+                    font-weight: 400;
+                    color: var(--color-accent-second);
+                    text-align: left;
+
+                }
+
+                &__subtitle {
+                    color: var(--color-gray2);
+                    font-size: 24px;
+                    font-weight: 400;
+
+                }
+            }
+
+            .rsell {
+                &__title {
+                    font-size: 18px;
+                    font-weight: 400;
+                    color: var(--color-accent-second);
+                    text-align: right;
+
+                }
+
+                &__subtitle {
+                    color: var(--color-gray2);
+                    font-size: 24px;
+                    font-weight: 400;
+
+
+                }
+
+            }
+
+            .rnum {
+
+                text-align: center;
+                position: relative;
+
+                &__button {
+                    border-bottom: solid 1px var(--color-white);
+                    font-size: 18px;
+                    font-weight: 500;
+                    width: 149px;
+
+                }
+
+                &__number {
+                    margin-top: 34px;
+                    font-weight: 400;
+                    font-size: 36px;
+
+                }
+
+            }
+        }
+
+        .rbot {
+
+            display: flex;
+            justify-content: space-between;
+
+            &__copyright {
+                &-title {
+                    font-size: 18px;
+                    font-weight: 400;
+                }
+
+            }
+
+            &__ref {
+                display: flex;
+                gap: 14px;
+                align-items: center;
+
+                &-image {
+                    height: 20px;
+                    width: 80px;
+                }
+            }
+        }
+
+
+    }
+    
+    &__rlogo {
+        position: relative;
+        filter: brightness(75%);
+        z-index: 0;
+        bottom: 40px;
+        
+        display: flex;
+        &-title {
+            overflow: hidden;
+            margin-left: auto;
+            margin-right: auto;
+            
+        }
+    }
+
+}
