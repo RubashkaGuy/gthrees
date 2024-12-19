@@ -13,8 +13,9 @@
     padding: 0 var(--container-padding);
     margin: 0 auto; 
     width: 100%;
-    @include md{
-        background-color: red;
-    }
+
 }
 
+.main__content {
+    overflow: hidden;
+}

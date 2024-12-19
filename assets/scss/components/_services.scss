@@ -13,10 +13,24 @@
             max-width: 1456px;
             margin-right: auto;
             margin-left: auto;
+            @include xxl {
+                max-width: 800px;
+
+            }
+            @include lg {
+                max-width: 700px;
+            }
             &__image {
                 display: flex;
                 position: relative;
                 top: -95px;
+                @include xxl {
+                    width: 800px;
+                    top: -60px;
+                }
+                @include lg {
+                    width: 700px;
+                }
             }
             &__text {
                 &-title {
@@ -32,6 +46,9 @@
                     line-height: 33px;
                     font-weight: 400;
                     margin-left: 369px;
+                    @include xxl {
+                        width: unset;
+                    }
                 }
             }
             &__link {

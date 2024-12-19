@@ -4,6 +4,12 @@
         max-width: 1456px;
         margin-right: auto;
         margin-left: auto;
+        @include xxl {
+            max-width: 800px;
+        }
+        @include lg {
+            max-width: 700px;
+        }
         &__text {
             &-title {
                 font-size: 52px;
@@ -23,14 +29,25 @@
 
         &__map {
             position: relative;
+
+            &-map {
+                @include xxl {
+                 width: 800px;
+                }
+                @include lg {
+                    width: 700px;
+                }
+            }
             .dot {
                 position: absolute;
                 &__text {
+                    position: absolute;
                     background-color: var(--color-white);
                     gap: 10px;
                     border-top-left-radius: 6px;
                     border-bottom-left-radius: 6px;
                     box-shadow: 0px 2px 8px rgba(76, 123, 135, 0.2);
+                    
                     &-title {
                         font-weight: 700;
                         font-size: 16px;
@@ -46,12 +63,13 @@
             }
             .dot1 {
                 
-                left: 150px;
-                top: 5px;
-                transform: translate(-21px,100px);
+               top: 190px;
+               left: 130px;
                 &__text {
-                    width: 113px;
-                    
+                    width: 137px;
+                    padding: 8px 12px 8px 12px;
+                    top: -78px;
+                    right: 18px;
                 }
             }
             &-map {

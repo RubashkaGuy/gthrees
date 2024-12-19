@@ -1,0 +1,167 @@
+.hire {
+    margin-top: 140px;
+    margin-bottom: 140px;
+    .hicont {
+        max-width: 1456px;
+        margin-left: auto;
+        margin-right: auto;
+        &__title {
+            font-size: 52px;
+            color: var(--color-accent);
+            font-weight: 400;
+            margin-bottom: 60px;
+            
+        }
+        &__items {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            .hicord {
+                
+                &__title {
+                    padding-right: 40px;
+                    padding-left: 40px;
+                    
+                    display: flex;
+                    background-color: var(--color-gray);
+                    border-radius: 4px;
+                    justify-content: space-between;
+                    &-text {
+                        color: var(--color-text);
+                        margin-top: 32px;
+                        margin-bottom: 32px;    
+                    }
+                    &-icon {
+                        
+                    }
+                }
+
+                .hiinfo {
+                    display: none;
+                    padding-left: 40px;
+                    &__text {
+                        font-size: 16px;
+                        font-weight: 400;
+                        color: var(--color-text);
+                        line-height: 22px;
+                        margin-top: 40px;
+                    }
+                    &__exp {
+                        &-title {
+                            margin-top: 40px;
+                            font-size: 18px;
+                            font-weight: 500;
+                            line-height: 25px;
+                            color: var(--color-text);
+                        }
+                        &-subtitle {
+                            margin: 0;
+                            font-size: 16px;
+                            font-weight: 400;
+                            line-height: 22px;
+                            color: var(--color-text);
+                            
+                        }
+                        
+                    }
+                    &__duties {
+                        margin-top: 40px;
+                        &-title {
+                            font-size: 18px;
+                            font-weight: 500;
+                            color: var(--color-text);
+
+                        }
+                        &-subtitle {
+                            color: var(--color-text);
+                            font-size: 16px;
+                            font-weight: 400;
+
+                        }
+                        &-int {
+                            color: var(--color-text);
+                            font-size: 16px;
+                            font-weight: 400;
+                            margin-top: 40px;
+                        }
+                    }
+                    .hiform {
+                        margin-top: 40px;
+                        max-width: 718px;
+                        &__inputs {
+                            display: grid;
+                            grid-template-columns: repeat(2,1fr);
+
+                            gap: 20px;
+                            &-input {
+                                outline: none;
+                                margin-top: 63px;
+                                
+                                border: none;
+                                border-bottom: solid 1px var(--color-gray2);
+                                padding-bottom: 10px;
+                            }
+                            .hinput {
+                                grid-column: span 2;
+                            }
+
+                        }
+
+                        .hiattach {
+                            &__text {
+                                color: var(--color-text);
+                                font-size: 16px;
+                                font-weight: 400;
+                            }
+                            &__attachment {
+                                
+                                width: max-content;
+                                border: 1px dotted var(--color-gray2);
+                                height: 100%;
+                                &-text {
+                                    font-size: 14px;
+                                    font-weight: 400;
+                                    line-height: 19px;
+                                    text-align: center;
+                                    color: #4f4f4f;
+                                    &--span {
+                                        font-weight: 400;
+                                        font-size: 14px;
+                                        color: var(--color-black);
+                                        border-bottom: solid 1px var(--color-black);
+                                    }
+                                }
+                                &-subtitle {
+                                    font-size: 14px;
+                                    font-weight: 400;
+                                    line-height: 19px;
+                                    text-align: center;
+                                    color: #4f4f4f;
+                                }
+
+                            }
+                            &__acception {
+                                color: var(--color-text);
+                                &-span {
+                                    color: var(--color-accent);
+                                    border-bottom: solid 1px var(--color-accent);
+                                }
+                            }
+                        }
+                        &__submit {
+                            gap: 10px;
+                            display: flex;
+                            &-text {
+                                font-weight: 500;
+                                text-transform: uppercase;
+                                color: var(--color-accent);
+                                border-bottom: solid 1px var(--color-accent);
+                            }
+                        }
+                    }
+                    
+                }
+            }
+        }
+    }
+}

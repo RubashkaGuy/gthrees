@@ -6,6 +6,12 @@
         max-width: 1456px;
         margin-right: auto;
         margin-left: auto;
+        @include xxl {
+            max-width: 800px;
+        }
+        @include lg {
+            max-width: 700px;
+        }
         &__text {
             &-title {
                 font-weight: 400;
@@ -18,6 +24,9 @@
                 line-height: 33px;
                 color: var(--color-text);
                 width: 1086px;
+                @include xxl {
+                    width: unset;
+                }
                 margin-left: 369px;
                 margin-top: 49px;
             }
@@ -28,11 +37,21 @@
             color: var(--color-accent);
             margin-top: 60px;
             gap: 54px;
+            @include xxl {
+                gap: 20px;
+                justify-content: space-between;
+            }
             &-item {
                 font-weight: 600;
                 font-size: 18px;
                 line-height: 25px;
                 color: var(--color-gray4);
+                @include xxl {
+                    font-size: 12px;
+                }
+                @include lg {
+                    font-size: 10px;
+                }
 
             }
             .highlited {

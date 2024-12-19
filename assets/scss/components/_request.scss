@@ -12,6 +12,9 @@
         margin-left: auto;
         padding-top: 140px;
         padding-bottom: 36px;
+        @include xxl {
+            max-width: 800px;
+        }
         &__title {
             font-size: 52px;
             font-weight: 400;
