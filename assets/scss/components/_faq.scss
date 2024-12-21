@@ -11,11 +11,17 @@
         @include lg {
             max-width: 700px;
         }
+        @include st {
+            max-width: 374px;
+        }
         &__title {
             font-size: 52px;
             color: var(--color-accent);
             font-weight: 400;
             margin-bottom: 60px;
+            @include st {
+                font-size: 36px;
+            }
 
             
         }
@@ -24,12 +30,18 @@
             flex-direction: column;
 
             gap: 20px;
+            @include st {
+                gap: 16px;
+            }
             .accord {
                 
                 &__title {
                     padding-right: 40px;
                     padding-left: 40px;
-                    
+                    @include st {
+                        padding-left: 0px;
+                        padding-right: 0px;
+                    }
                     display: flex;
                     background-color: var(--color-gray);
                     border-radius: 4px;
@@ -37,16 +49,30 @@
                     &-text {
                         color: var(--color-text);
                         margin-top: 32px;
-                        margin-bottom: 32px;    
+                        margin-bottom: 32px;  
+                        font-weight: 500;
+                        @include st {
+                            margin-top: 20px;
+                            margin-bottom: 20px;
+                            font-size: 16px;
+                            padding-right: 20px;
+                        }  
                     }
                     &-icon {
-                        
+                        @include st {
+                            margin-bottom: auto;
+                            margin-top: 20px;
+                        }
                     }
                 }
                 &__info {
                     display: none;
                     padding-right: 40px;
                     padding-left: 40px;
+                    @include st {
+                        padding-left: 0;
+                        padding-right: 0;
+                    }
                     &-text {
                         color: var(--color-text);
                         font-size: 16px;

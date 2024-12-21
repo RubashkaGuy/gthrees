@@ -155,14 +155,44 @@
 
 
 .serve {
+    position: relative; // Убедитесь, что элемент-обертка имеет относительное позиционирование
     &:hover {
-        &__dropdown {
-            display: flex;
+        .serve__dropdown {
+            display: block; // Отображать меню при наведении
         }
     }
 
-
     &__dropdown {
-        display: none;
+        display: none; // Скрыто по умолчанию
+        position: absolute; // Абсолютное позиционирование для отображения под родительским элементом
+        top: 100%; // Начать отображение сразу под родительским элементом
+        left: 0; // Привязка к левому краю
+        background-color: white; // Цвет фона
+        z-index: 10; // Обеспечение, что выпадающее меню будет поверх других элементов
+        width: 450px;
+        border-radius: 4px;
+        &-item {
+            position: relative;
+            right: 30px;
+            padding-top: 10px;
+            padding-bottom: 10px;
+            border-bottom: solid 1px var(--color-gray);
+            
+            a {
+                
+                position: relative;
+                
+                color: var(--color-text); // Цвет текста
+                margin-right: auto;
+                
+                font-size: 14px; // Размер шрифта
+                font-weight: 500; // Жирность текста
+                width: min-content;
+                &:hover {
+                    background-color: var(--color-accent-light); // Фон при наведении
+                    color: var(--color-accent); // Цвет текста при наведении
+                }
+            }
+        }
     }
 }

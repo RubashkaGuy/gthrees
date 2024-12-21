@@ -1,80 +1,28 @@
-.welcome {
+.contgen {
     width: 100%;
     
-    &__upper {
-        min-height: 136px;
-        padding-top: 42px;
-        overflow: hidden;
-        @include st {
-            min-height: 60px;
-        }
-    }
-    .wbot {
 
-        height: 80vh;    
+    .cbot {
+
+        height: 590px;    
         position: relative;
-        background: linear-gradient(96.95deg, rgba(0, 42, 85, 0.68) 24.05%, rgba(0, 42, 85, 0) 57.46%), linear-gradient(79.3deg, #002A55 26.57%, rgba(0, 42, 85, 0.76) 51.95%, rgba(12, 37, 94, 0) 88.87%), url("/assets/img/images/fura.png"), #003B77;
-        background-size: cover;
-        background-position: center;
         
-        @include xxl {
-            
-        }
-        @include st {
-            height: unset;
-            background: radial-gradient(#003B77 #002A55);
-        }
-        .wcont {
+        background-position: top;
+        .ccont {
+            border-bottom: solid 1px var(--color-gray4);
             max-width: 1456px;
             margin-right: auto;
             margin-left: auto;
-            
-            @include xxl {
-                max-width: 800px;
-                
-            }
-            @include lg {
-                max-width: 700px;
-            }
-            @include md {
-                max-width: 600px;
-            }
-            @include st {
-                max-width: 374px;
-                margin-left: auto;
-                margin-right: auto;
-                position: relative;
-            }
             &__text {
                 display: flex;
                 margin: auto;
                 top: -95px;
                 position: relative;
-                @include xxl {
-                    width: 890px;
-                    margin-left: auto;
-                    padding-right: 110px;
-                    width: 800px;
-                
-                }
-                @include md {
-                    width: 680px;
-
-
-                }
-                @include st {
-                    width: 524px;
-                    top: -35px;
-                    left: -20px;
-                    
-                }
                 
             }
             &__desc {
                 position: relative;
-                @include md {
-                    margin-left: auto;
-                }
+                
                 &-title {
                     
                     margin: 0;
@@ -82,22 +30,8 @@
                     font-size: 800;
                     line-height: 84px;
                     font-size: 60px;
-                    @include md {
-                        font-size: 50px;
-                        line-height: 60px;
-                        margin-left: 20px;
-                    }
-                    @include st {
-                        margin-top: 60px;
-                        font-size: 34px;
-                        line-height: 67px;
-                        
-                    }
                     &--exped {
                         margin-left: 100px;
-                        @include md {
-                            margin-left: 0;
-                        }
                     }
                     &--comp {
                         color: white;
@@ -109,32 +43,31 @@
                         
                     }
 
-                    .servicelevel {
+                    .effective {
                         // position: absolute;
                         // transform: translate(380px,-69px);
-                        margin: -70px 0 0 410px;
-                        @include md {
+                        margin: 0px 0 0 0;
+                        &__title {
+                            text-transform: uppercase;
+                            font-size: 60px;
                             margin: 0;
-                            margin-left: 20px;
                             
+                            padding-bottom: 40px;
+                            
+
                         }
                         &__text {
                             font-weight: 400;
                             font-size: 18px;
                             line-height: 25px;
-                            width: 360px;
+                            width: 718px;
                             margin: 0;
-                            @include st {
-                                margin-top: 62px;
-                            }
+                            
                         }
                         &__button {
                             gap: 10px;
                             display: flex;
-                            margin-top: 10px;
-                            @include st {
-                                margin-top: 30px;
-                            }
+                            
                             &-text {
                                 font-size: 18px;
                                 font-weight: 500;
@@ -147,9 +80,9 @@
                         }
                     }
             }
-            .wbut {
+            .cbut {
                 display: flex;
-                margin-top: 184px;
+                margin-top: 90px;
                 padding-bottom: 20px;
                 position: relative;
                 &__slider {
@@ -163,21 +96,17 @@
                     }
                 }
                 &__social {
-                    @include xxl {
-                        display: none;
-                    }
                     gap: 60px;
                     display: flex;
+                    margin-left: auto;
                     
                     &-links {
                         font-size: 16px;
                         font-weight: 600;
+                        
                     }
                 }
                 &__messenger {
-                    @include xxl {
-                        display: none;
-                    }
                     background-color: #012B56;
                     border-radius: 50px;
                     padding: 10px;
@@ -195,4 +124,7 @@
 }
 
 
+
 // О компании
+/* XXL 2 */
+

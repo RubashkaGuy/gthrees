@@ -16,6 +16,11 @@
         @include lg {
             max-width: 700px;
         }
+        @include st {
+            max-width: 374px;
+            padding-top: 80px;
+            padding-bottom: 80px;
+        }
         &__title {
             font-size: 52px;
             font-weight: 400;
@@ -34,11 +39,19 @@
             .necards {
                 &__items {
                     margin-right: 58px;
+                    @include st {
+                        margin: 0;
+                    }
                     &-item {
                         display: flex;
                         border-bottom: solid 1px var(--color-gray2);
                         padding-bottom: 5px;
                         &--title {
+                            @include st {
+                                font-size: 18px;
+                                line-height: 25px;
+                                margin-right: 0;
+                            }
                             font-size: 24px;
                             font-weight: 400;
                             line-height: 33px;

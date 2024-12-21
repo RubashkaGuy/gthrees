@@ -14,13 +14,18 @@
         @include lg {
             max-width: 700px;
         }
+        @include st {
+            max-width: 374px;
+        }
         &__title {
             font-size: 52px;
             font-weight: 300;
             color: var(--color-accent);
             margin-bottom: 40px; /* Отступ снизу */
             text-align: left; /* Выравнивание текста по левому краю */
-
+            @include st {
+                font-size: 36px;
+            }
         }
 
         &__cards {
@@ -30,6 +35,7 @@
             @include xxl {
                 display: grid;
                 grid-template-columns: repeat(2,1fr);
+                gap: 20px;
             }
             &-card {
                 flex: 1;
@@ -39,11 +45,20 @@
                     font-size: 22px;
                     border-bottom: 1px solid var(--color-gray2);
                     padding-bottom: 20px;
+                    @include st {
+                        font-size: 16px;
+                    }
                 }
                 &--number {
                     color: var(--color-accent);
                     font-size: 42px;
                     font-weight: 500;
+                    @include st {
+                        font-size: 20px;
+                        span {
+                            font-size: 50px;
+                        }
+                    }
                 }
             }
         }

@@ -12,6 +12,9 @@
         @include lg {
             max-width: 700px;
         }
+        @include st {
+            max-width: 374px;
+        }
         &__text {
             &-title {
                 font-weight: 400;
@@ -26,6 +29,11 @@
                 width: 1086px;
                 @include xxl {
                     width: unset;
+                }
+                @include st {
+                    margin-left: 0;
+                    font-size: 18px;
+                    line-height: 25px;
                 }
                 margin-left: 369px;
                 margin-top: 49px;
@@ -52,11 +60,16 @@
                 @include lg {
                     font-size: 10px;
                 }
-
+                @include st {
+                    font-size: 18px;
+                }
             }
             .highlited {
                 color: var(--color-accent);
                 border-bottom: 3px solid;
+                @include st {
+                    
+                }
             }
         }
 
@@ -66,12 +79,26 @@
             gap: 20px;
             grid-template-rows: repeat(2,1fr);
             display: grid;
-            
+            position: relative;
+            @include st {
+                grid-template-columns: repeat(2,1fr);
+            }
 
             &-item {
                 
                 min-height: 349px;
-                
+                @include st {
+                    min-height: 182px;
+                    
+                    min-width: 182px;
+                }
+                &--image {
+                    @include st {
+                        max-width: 100px;
+                    }
+                    margin-left: auto;
+                    margin-right: auto;
+                }
                 background-color: var(--color-gray1);
             }
             .it2 {
@@ -81,6 +108,11 @@
                 align-items: center;
                 margin-left: auto;
                 margin-right: auto;
+                @include st {
+                    height: unset;
+                    
+                    
+                }
             }
             .it3 {
                 grid-column: span 1;
@@ -89,6 +121,9 @@
                 align-items: center;
                 margin-left: auto;
                 margin-right: auto;
+                @include st {
+                    height: unset;
+                }
             }
             .it4 {
                 grid-column: span 1;
@@ -97,12 +132,20 @@
                 align-items: center;
                 margin-left: auto;
                 margin-right: auto;
+                @include st {
+                    height: unset;
+                    grid-row: 4;
+                }
             }
             .it1 {
                 background-image: url(/assets/img/images/chemistry.jpeg);
                 background-position: center;
-                object-fit: cover;
+                background-size: cover;
+                
                 grid-column: span 2;
+                @include st {
+                    height: 182px;
+                }
                 
             }
             .it5 {
@@ -112,12 +155,19 @@
                 align-items: center;
                 margin-left: auto;
                 margin-right: auto;
+                @include st {
+                    height: unset;
+                    grid-column: span 2;
+                }
             }       
             .it6 {
                 background-color: var(--color-accent-second);
                 display: flex;
                 align-items: center;
                 max-width: 349px;
+                @include st {
+                    max-height: 182px;
+                }
                 gap: 10px;
                 
 
@@ -139,6 +189,18 @@
                 margin-left: auto;
                 display: flex;
                 margin-top: 294px;
+                @include st {
+                    position: absolute;
+                    right: 12%;
+                }
+                &__mobile {
+                    margin-right: 30px;
+                }
+                &__image {
+                    
+                        display: none;
+                    
+                }
                 &__text {
                     font-size: 18px;
                     font-weight: 500;
