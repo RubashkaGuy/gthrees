@@ -3,14 +3,24 @@
     .vcont {
         max-width: 1456px;
         margin-left: auto;
-        margin-right: auto;    
+        margin-right: auto;  
+        @include st {
+            max-width: 374px;
+        }  
         &__title {
+            @include st {
+                font-size: 36px;
+            }
             font-size: 52px;
             font-weight: 400;
             color: var(--color-accent);
         }
         &__text {
             margin-left: 355px;
+            @include st {
+                margin-left: 0;
+
+            }
             margin-top: 60px;
             margin-bottom: 40px;
             color: var(--color-text);
@@ -18,22 +28,52 @@
             &-title {
                 font-size: 26px;
                 font-weight: 500;
+                @include st {
+                    font-size: 18px;
+                }
             }
             &-subtitle {
                 font-size: 16px;
+                @include st {
+                    font-size: 14px;
+                    line-height: 19px;
+                }
                 line-height: 22px;
             }
         }
-        &__images{ 
+        &__images{
+             @include st {
+                flex-direction: column-reverse;
+                display: flex;
+                gap: 16px;
+             }
+            &-large {
+                @include st {
+                    width: 312px;
+                }
+                
+            }
             &-small {
                 
+                @include st {
+                    width: 156px;
+                    margin-left: auto;
+                }
             }
         }
         &__target {
+            @include st {
+                margin-left: 0;
+                
+            }
             margin-top: 40px;
             margin-left: 355px;
             color: var(--color-text);
             &-title {
+                @include st {
+                    font-size: 18px;
+                    margin-bottom: 20px;
+                }
                 margin-bottom: 30px;
                 font-size: 26px;
                 font-weight: 500;
@@ -41,7 +81,14 @@
             }
             &-subtitle {
                 display: flex;
+                @include st {
+                    display: block;
+                }
                 &--text {
+                    @include st {
+                        font-size: 14px;
+                        line-height: 19px;
+                    }
                     font-weight: 400;
                     font-size: 16px;
                     line-height: 22px;

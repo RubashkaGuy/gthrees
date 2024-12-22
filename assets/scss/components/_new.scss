@@ -5,6 +5,9 @@
         margin-right: auto;
         margin-top: 140px;
         margin-bottom: 140px;
+        @include st {
+            max-width: 374px;
+        }
         &__news {
             display: flex;
             flex-direction: column;
@@ -13,11 +16,16 @@
             padding-bottom: 50px;
             .necard {
                 &--selected {
+                    @include st {
+                        border: none;
+                    }
                     border-top: solid 1px var(--color-gray2);
                     border-bottom: solid 1px var(--color-gray2);
                 }
                 display: flex;
-
+                @include st {
+                    flex-direction: column;
+                }
                 padding-bottom: 50px;
                 padding-top: 50px;
                 
@@ -28,27 +36,45 @@
                         max-width: 349px;
                         max-height: 278px;
                         object-fit: cover;
+                        @include st {
+                            width: 374px;
+                            
+                        }
                     }
                 }
                 &__date {
                     margin-left: 15px;
+                    @include st {
+                        margin: 0;
+                    }
                     &-number {
                         margin: 0;
                         margin-top: -15px;
-                        
+                        @include st {
+                            display: none;
+                        }
                         font-size: 84px;
                         line-height: 92px;
                         font-weight: 400;
                         color: var(--color-accent);
                     }
                     &-date {
+                        @include st {
+                            &:before {
+                                content: "22 ";
+                            }
+                        }
                         font-size: 16px;
                         font-weight: 500;
                         color: var(--color-gray3);
                     }
                 }
                 &__text {
+                    @include st {}
                     margin-left: 73px;
+                    @include st {
+                        margin: 0;
+                    }
                     display: flex;
                     flex-direction: column;
                     &-title {
@@ -64,6 +90,9 @@
                         font-weight: 400;
                     }
                     &-arrow {
+                        @include st {
+                            display: none;
+                        }
                         width: 14px;
                         height: 14px;
                         margin-left: auto;

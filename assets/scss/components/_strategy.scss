@@ -3,14 +3,27 @@
     padding-top: 140px;
     margin-top: 140px;
     padding-bottom: 140px;
+    @include st {
+        margin-top: 60px;
+        margin-bottom: 60px;
+    }
     .stcont {
         max-width: 1456px;
         margin-left: auto;
         margin-right: auto;
         position: relative;
+        @include st {
+            max-width: 374px;
+            position: relative;
+            bottom: 60px;
+        }
         &__title {
             font-size: 52px;
             font-weight: 400;
+            @include st {
+                font-size: 36px;
+                font-weight: 400;
+            }
         }
         &__scroller {
             margin-top: 60px;
@@ -21,7 +34,15 @@
                 display: flex;
                 position: relative;
                 gap: 20px;
+                @include st {
+                    margin-left: 0;
+
+                }
                 .currentim {
+                    @include st {
+                        width: 312px;
+                        height: 231px;
+                    }
                     width: 595px;
                     height: 520px;
                 }    
@@ -29,7 +50,10 @@
                     margin-bottom: 215px;
                 }
                 &__images {
-                    
+                    @include st {
+                        width: 321px;
+                        height: 231px;
+                    }
                 }
             }
 
@@ -44,8 +68,16 @@
 
         &__text {
             position: absolute;
+            @include st {
+                top: 400px;
+            }
             bottom: -50px;
             &-title {
+                @include st {
+                    font-size: 22px;
+                    width: 328px;
+                    margin-top: 24px;
+                }
                 font-size: 36px;
                 width: 718px;
                 font-weight: 400;
@@ -54,6 +86,7 @@
                 display: flex;
                 gap: 10px;
                 &--title {
+                    font-weight: 400;
                     border-bottom: 1px solid var(--color-white);
                 }
                 &--image {

@@ -1,9 +1,10 @@
 $sm: 390px;
-$st: 414px;
+$st: 500px;
 $md: 576px;
 $lg: 768px;
 $xl: 820px;
 $xxl: 990px;
+$fullhd: 1920px;
 @mixin sm {
     @media (max-width: #{$sm}) {
         @content;
@@ -32,6 +33,11 @@ $xxl: 990px;
  }
 @mixin st {
     @media (max-width: #{$st}) {
+        @content;
+    }
+}
+@mixin fullhd {
+    @media (max-width: #{$fullhd}) {
         @content;
     }
 }

@@ -5,10 +5,11 @@
         padding-top: 40px;
     }
     &__bottom {
-        background-color: #113385;
-        // background: url("/assets/img/images/1ca3d9df73314251b2c2a73d816751e8.jpeg");
+        background: 
+        radial-gradient(circle, rgba(21, 54, 131, 0.9) 0%, rgba(12, 37, 94, 1) 100%), /* Градиент */
+        url("/assets/img/images/containers.jpg"),; /* Ссылка на изображение */
         background-position: center;
-        object-fit: cover;
+        background-size: cover;
         .serv {
             max-width: 1456px;
             margin-right: auto;
@@ -20,16 +21,26 @@
             @include lg {
                 max-width: 700px;
             }
+            @include st {
+                max-width: 374px;
+
+            }
             &__image {
                 display: flex;
                 position: relative;
                 top: -95px;
+
                 @include xxl {
                     width: 800px;
                     top: -60px;
                 }
                 @include lg {
                     width: 700px;
+                }
+                @include st {
+                 width: 414px;
+                 top: -25px;
+                 right: 22px;   
                 }
             }
             &__text {
@@ -38,6 +49,10 @@
                     line-height: 72px;
                     font-weight: 400;
                     margin-top: -40px;
+                    @include st {
+                        font-size: 36px;
+                        margin-top: 30px;
+                    }
 
                 }
                 &-subtitle {
@@ -49,21 +64,40 @@
                     @include xxl {
                         width: unset;
                     }
+                    @include st {
+                        margin-left: 0;
+                        font-size: 18px;
+                        line-height: 25px;
+                    }
                 }
             }
             &__link {
                 
                 display: flex;
                 gap: 10px;
+                width: max-content;
+                margin-left: auto;
+
+                &-title {
+                    font-weight: 500;
+                    border-bottom: solid 1px var(--color-white);
+                }
                 
             }
             &__scroll {
                 .scrcards {
                     display: flex;
                     gap: 20px;
+                    @include st {}
                     &__card {
                         margin-bottom: 50px;
                         position: relative;
+                        &-image {
+                            @include st {
+                                max-width: 312px;
+                                max-height: 231px;
+                            }
+                        }
                         &-text {
                             margin: 0;
                             position: absolute;
@@ -92,3 +126,8 @@
         }
     }
 }
+
+/* XXL 2 */
+
+
+

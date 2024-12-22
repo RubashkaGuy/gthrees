@@ -1,0 +1,60 @@
+.histmob {
+    display: none;
+    @include st {
+        display: block;
+    }
+    .hcont {
+        margin-left: auto;
+        margin-right: auto;
+        max-width: 374px;
+        &__title {
+            font-size: 36px;
+            color: var(--color-accent);
+            font-weight: 400;
+        }
+        .hist {
+            &__counter {
+                position: relative;
+                &-circle {
+                    height: 218px;
+                    position: absolute;
+                    left: 25%;
+
+                }
+                &-year {
+                    padding-top: 15%;
+                    margin-left: 10px;
+                    position: relative;
+                    text-align: center;
+                    font-size: 80px;
+                    font-weight: 500;
+                    color: var(--color-accent);
+                    z-index: 10;
+                    
+                }
+            }
+            .htext {
+                display: flex;
+                &__content {
+                    &-date {
+                        color: var(--color-gray3);
+                        font-size: 16px;
+                        font-weight: 400;
+                        
+                    }
+                    &-text {
+                        
+                        
+                        
+                        width: 313px;
+                        color: var(--color-text);
+                        font-size: 16px;
+                        line-height: 22px;
+                    }
+                }
+                
+            }
+        }
+    }
+
+}

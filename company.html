@@ -16,19 +16,42 @@
     <div class="application__template">
         <header class="application__header header" id="header">
             <div class="header__container container nav">
-                <a href="#!" class="nav__logo">
+                <a href="/index.html" class="nav__logo">
                     <img src="/assets/img/icons/logo.svg" alt="Логотип GTHREES" class="nav__logo-icon">
                 </a>
+                <a href="/index.html" class="nav__mobile">
+                    <img src="/assets/img/icons/logo-mobile.svg" alt="Логотип GTHREES" class="nav__logo-icon">
+                </a>
                 <ul class="nav__menu">
-                    <li class="nav__menu-item navitem">
-                        <a href="" class="navitem__item">
-                            <span class="navitem__item-text">Наши услуги</span>
-                            <img src="assets/img/icons/arrow-lng.svg" alt="" class="navitem__item-image">
+                    <li class="nav__menu-item navitem serve">
+                        <a href="#!" class="navitem__item serve__item">
+                            <span class="navitem__item-text serve__item-text">Наши услуги</span>
+                            <img src="assets/img/icons/arrow-lng.svg" alt="" class="navitem__item-image serve__item-image">
                         </a>
-
+                        <ul class="serve__dropdown">
+                            <li class="serve__dropdown-item">
+                                <a href="/services.html" class="serve__dropdown-item--link">Авиаперевозки</a>
+                            </li>
+                            <li class="serve__dropdown-item">
+                                <a href="/services.html" class="serve__dropdown-item--link">Автомобильные перевозки</a>
+                            </li>
+                            <li class="serve__dropdown-item">
+                                <a href="/services.html" class="serve__dropdown-item--link">Мультимодальные перевозки</a>
+                            </li>
+                            <li class="serve__dropdown-item">
+                                <a href="/services.html" class="serve__dropdown-item--link">Железнодорожные перевозки</a>
+                            </li>
+                            <li class="serve__dropdown-item">
+                                <a href="/services.html" class="serve__dropdown-item--link">Перевозки тяжеловесных и негабаритных грузов</a>
+                            </li>
+                            <li class="serve__dropdown-item">
+                                <a href="/services.html" class="serve__dropdown-item--link">Перевозки опасных грузов</a>
+                            </li>
+                        </ul>
                     </li>
+                    
                     <li class="nav__menu-item navitem">
-                        <a href="" class="navitem__item">Контакты</a>
+                        <a href="/contacts.html" class="navitem__item">Контакты</a>
                     </li>
                     <li class="nav__menu-item navitem">
                         <a href="tel:375295462567" class="navitem__item">+375(29)546-25-67</a>
@@ -51,14 +74,16 @@
             <div class="main__content" id="main-content">
                 <section class="aboutcompany">
                     <div class="aboutcompany__container company">
-                        <div class="company__upper"></div>
+                        <div class="company__upper">
+                            <h2 class="company__upper-text">О компании</h2>
+                        </div>
                         <div class="company__bottom cbot">
                             <div class="cbot__container ccont">
                                 <img src="assets/img/icons/title.svg" alt="" class="ccont__text">
                                 <div class="ccont__desc">
-                                    <div class="ccont__desc-subtitle effective">
-                                        <p class="effective__text">Благодаря тесному сотрудничеству с лучшими транспортными компаниями мы способны предложить качественный и эффективный логистический сервис.</p>
-                                        <a href="#!" class="effective__button">
+                                    <div class="ccont__desc-subtitle effective efcompany">
+                                        <p class="effective__text efcompanytext">Благодаря тесному сотрудничеству с лучшими транспортными компаниями мы способны предложить качественный и эффективный логистический сервис.</p>
+                                        <a href="#!" class="effective__button efcompanybutton">
                                             <a href="company.html" class="effective__button-text">получить консультацию</a>
                                             <img src="assets/img/icons/arrow.svg" alt=""
                                                 class="effective__button-icon">
@@ -198,6 +223,7 @@
                             </div>
                             <div class="manag__info">
                                 <h3 class="manag__info-name">Сергей <br> <br> Смирнов</h3>
+                                <h3 class="manag__info-mobile">Сергей Смирнов</h3>
                                 <div class="manag__info-text mantext">
                                     <img src="assets/img/icons/quots.svg" alt="" class="mantext__quot">
                                     <p class="mantext__text">Создание благоприятной среды взаимопонимания и взаимоуважения всех участников цепочки поставок, соблюдая национальные и международные законы и правила, а также строгие этические принципы ведения бизнеса. <br> <br>
@@ -207,24 +233,26 @@
                             </div>
                         </div>
                     </div>
+                </section>
+                <section class="achievements">
                     <div class="achievements__container acont">
                         <h2 class="acont__title">Наши достижения</h2>
                         <div class="acont__cards">
                             <div class="acont__cards-card">
                                 <p class="acont__cards-card--title">Частота загрузок</p>
-                                <h2 class="acont__cards-card--number">61 мин.</h2>
+                                <h2 class="acont__cards-card--number"><span>61</span> мин.</h2>
                             </div>
                             <div class="acont__cards-card">
                                 <p class="acont__cards-card--title">Грузов перевезено</p>
-                                <h2 class="acont__cards-card--number">287 тыс.</h2>
+                                <h2 class="acont__cards-card--number"><span>287</span> тыс.</h2>
                             </div>
                             <div class="acont__cards-card">
                                 <p class="acont__cards-card--title">Количество партнёров</p>
-                                <h2 class="acont__cards-card--number">3 165</h2>
+                                <h2 class="acont__cards-card--number"><span>3 165</span></h2>
                             </div>
                             <div class="acont__cards-card">
                                 <p class="acont__cards-card--title">Пройденное расстояние</p>
-                                <h2 class="acont__cards-card--number">42 млн. км</h2>
+                                <h2 class="acont__cards-card--number"><span>42</span> млн. км</h2>
                             </div>
                         </div>
                     </div>
@@ -284,6 +312,31 @@
                         </div>
                     </div>
                 </section>
+                <section class="histmob">
+                    <div class="histmob__container hcont">
+                        <h2 class="hcont__title">История развития компании</h2>
+                        <div class="hcont__content hist">
+                            <div class="hist_counter">
+                                <img src="assets/img/icons/circle.svg" alt="" class="hist__counter-circle">
+                                <h3 class="hist__counter-year">2022</h3>                   
+                            </div>
+                            <div class="hist__text htext">
+                                <div class="htext__content">
+                                    <h3 class="htext__content-date">Декабрь 2020</h3>
+                                    <p class="htext__content-text"> Обзор железнодорожного, автомобильного рынка в России, тенденции изменений рынка на будущий год, активная динамика. Обзор железнодорожного, автомобильного рынка в России, тенденции изменений рынка на будущий год, активная динамика.</p>
+                                </div>
+                                <div class="htext__content">
+                                    <h3 class="htext__content-date">Декабрь 2020</h3>
+                                    <p class="htext__content-text"> Обзор железнодорожного, автомобильного рынка в России, тенденции изменений рынка на будущий год, активная динамика. Обзор железнодорожного, автомобильного рынка в России, тенденции изменений рынка на будущий год, активная динамика.</p>
+                                </div>
+                                <div class="htext__content">
+                                    <h3 class="htext__content-date">Декабрь 2020</h3>
+                                    <p class="htext__content-text"> Обзор железнодорожного, автомобильного рынка в России, тенденции изменений рынка на будущий год, активная динамика. Обзор железнодорожного, автомобильного рынка в России, тенденции изменений рынка на будущий год, активная динамика.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
                 <section class="faq">
                     <div class="faq__container facont">
                         <h2 class="facont__title">Часто спрашивают</h2>
@@ -291,7 +344,7 @@
                             <div class="facont__items-accordeon accord">
                                 <a href="" class="accord__title aitem1">
                                     <h3 class="accord__title-text">Как застрахован груз на международных перевозках?</h3>
-                                    <img src="assets/img/icons/arrow.svg" alt="" class="accord__title-icon">
+                                    <img src="assets/img/icons/arrow-blue.svg" alt="" class="accord__title-icon">
                                     
                                 </a>
                                 <div class="accord__info ainfo1">
@@ -305,7 +358,7 @@
                             <div class="facont__items-accordeon accord">
                                 <a href="" class="accord__title aitem1">
                                     <h3 class="accord__title-text">Как застрахован груз на международных перевозках?</h3>
-                                    <img src="assets/img/icons/arrow.svg" alt="" class="accord__title-icon">
+                                    <img src="assets/img/icons/arrow-blue.svg" alt="" class="accord__title-icon">
                                 </a>
                                 <div class="accord__info ainfo2">
                                     <h3 class="accord__info-text">
@@ -318,7 +371,7 @@
                             <div class="facont__items-accordeon accord">
                                 <a href="" class="accord__title aitem1">
                                     <h3 class="accord__title-text">Как застрахован груз на международных перевозках?</h3>
-                                    <img src="assets/img/icons/arrow.svg" alt="" class="accord__title-icon">
+                                    <img src="assets/img/icons/arrow-blue.svg" alt="" class="accord__title-icon">
                                 </a>
                                 <div class="accord__info ainfo3">
                                     <h3 class="accord__info-text">
@@ -331,7 +384,7 @@
                             <div class="facont__items-accordeon accord">
                                 <a href="" class="accord__title aitem1">
                                     <h3 class="accord__title-text">Как застрахован груз на международных перевозках?</h3>
-                                    <img src="assets/img/icons/arrow.svg" alt="" class="accord__title-icon">
+                                    <img src="assets/img/icons/arrow-blue.svg" alt="" class="accord__title-icon">
                                 </a>
                                 <div class="accord__info ainfo4">
                                     <h3 class="accord__info-text">

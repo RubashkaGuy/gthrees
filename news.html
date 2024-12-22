@@ -16,19 +16,42 @@
     <div class="application__template">
         <header class="application__header header" id="header">
             <div class="header__container container nav">
-                <a href="#!" class="nav__logo">
+                <a href="/index.html" class="nav__logo">
                     <img src="/assets/img/icons/logo.svg" alt="Логотип GTHREES" class="nav__logo-icon">
                 </a>
+                <a href="/index.html" class="nav__mobile">
+                    <img src="/assets/img/icons/logo-mobile.svg" alt="Логотип GTHREES" class="nav__logo-icon">
+                </a>
                 <ul class="nav__menu">
-                    <li class="nav__menu-item navitem">
-                        <a href="" class="navitem__item">
-                            <span class="navitem__item-text">Наши услуги</span>
-                            <img src="assets/img/icons/arrow-lng.svg" alt="" class="navitem__item-image">
+                    <li class="nav__menu-item navitem serve">
+                        <a href="#!" class="navitem__item serve__item">
+                            <span class="navitem__item-text serve__item-text">Наши услуги</span>
+                            <img src="assets/img/icons/arrow-lng.svg" alt="" class="navitem__item-image serve__item-image">
                         </a>
-
+                        <ul class="serve__dropdown">
+                            <li class="serve__dropdown-item">
+                                <a href="/services.html" class="serve__dropdown-item--link">Авиаперевозки</a>
+                            </li>
+                            <li class="serve__dropdown-item">
+                                <a href="/services.html" class="serve__dropdown-item--link">Автомобильные перевозки</a>
+                            </li>
+                            <li class="serve__dropdown-item">
+                                <a href="/services.html" class="serve__dropdown-item--link">Мультимодальные перевозки</a>
+                            </li>
+                            <li class="serve__dropdown-item">
+                                <a href="/services.html" class="serve__dropdown-item--link">Железнодорожные перевозки</a>
+                            </li>
+                            <li class="serve__dropdown-item">
+                                <a href="/services.html" class="serve__dropdown-item--link">Перевозки тяжеловесных и негабаритных грузов</a>
+                            </li>
+                            <li class="serve__dropdown-item">
+                                <a href="/services.html" class="serve__dropdown-item--link">Перевозки опасных грузов</a>
+                            </li>
+                        </ul>
                     </li>
+                    
                     <li class="nav__menu-item navitem">
-                        <a href="" class="navitem__item">Контакты</a>
+                        <a href="/contacts.html" class="navitem__item">Контакты</a>
                     </li>
                     <li class="nav__menu-item navitem">
                         <a href="tel:375295462567" class="navitem__item">+375(29)546-25-67</a>
@@ -158,42 +181,33 @@
                         <a href="#!" class="newsco__news-button">ПОКАЗАТЬ ЕЩЁ</a>
                     </div>
                 </section> 
-                <section class="request rcont">
-                    <div class="rcont__footer rnfoot">
-                        <div class="rnfoot__top">
-                            <div class="rnfoot__top-coop rcoop">
-                                <h3 class="rcoop__title">Для сотрудничества</h3>
-                                <a href="mail: info@gthrees.com" class="rcoop__subtitle">info@gthrees.com</a>
+                <section class="contact" id="call">
+                    
+                    <div class="contact__footer cfoot cnews">
+                        <div class="cfoot__upper cfup">
+                            <div class="cfup__mail">
+                                <h3 class="cfup__mail-title">Для сотрудничества:</h3>
+                                <a href="#!" class="cfup__mail-mail">info@gthrees.com</a>
                             </div>
-                            <div class="rnfoot__top-num rnum">
-                                <a href="#!" class="rnum__button">
-                                    ПОДПИСАТЬСЯ
-                                </a>
-                                <div class="rnum__number">
-                                    <a href="#!" class="rnum__number-text">+375(17)252-22-25</a>
-                                </div>
-                
+                            <div class="cfup__subscribe">
+                                <a href="#!" class="cfup__subscribe-link">Подписаться</a>
+                                <a href="#!" class="cfup__subscribe-number">+375(17)252-22-25</a>
                             </div>
-                            <div class="rnfoot__top-sell rsell">
-                                <h3 class="rsell__title">Отдел продаж:</h3>
-                                <a href="#!" class="rsell__subtitle">sales@gthrees.com</a>
+                            <div class="cfup__sell">
+                                <h3 class="cfup__sell-title">Отдел продаж:</h3>
+                                <a href="#!" class="cfup__sell-mail">sales@gthrees.com</a>
                             </div>
                         </div>
-                        <div class="rnfoot__bottom rbot">
-                            <div class="rbot__copyright">
-                                <h3 class="rbot__copyright-title">© 2023, GTHREES</h3>
-                            </div>
-                            <div class="rbot__ref">
-                                <h3 class="rbot__ref-text">Разработано в</h3>
-                                <img src="assets/img/icons/likeit.svg" alt="" class="rbot__ref-image">
-                            </div>
+                        <div class="contact__bottom cfbot">
+                            <h3 class="cfbot__text">© 2023, GTHREES</h3>
+                            <a href="#!" class="cfbot__likeit">
+                                <h3 class="cfbot__likeit-text">Разработано в</h3>
+                                <img src="assets/img/icons/likeIt.svg" alt="" class="cfbot__likeit-icon">
+                            </a>
                         </div>
-                
+                        <img src="assets/img/icons/title-dark.svg" alt="" class="cfoot__title">
                     </div>
-                    <div class="request__rlogo">
-                        <img src="assets/img/icons/title.svg" alt="" class="request__rlogo-title">
-                    </div>
-                </section>
+                </section>  
             </div>
         </main>
         <footer class="application__footer footer">

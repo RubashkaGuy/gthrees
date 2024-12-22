@@ -3,6 +3,9 @@
         max-width: 1456px;
         margin-left: auto;
         margin-right: auto;
+        @include st {
+            max-width: 374px;
+        }
         margin-top: 140px;
         margin-bottom: 140px;
         &__title {
@@ -14,16 +17,25 @@
             display: grid;
             grid-template-columns: repeat(3,1fr);
             grid-template-rows: repeat(1,3fr);
+            @include st {
+                display: flex;
+            }
             gap: 20px;
             &__card {
                 position: relative;
                 &:hover {
                     .srdef {
                         display: none;
-
+                        @include st {
+                            display: flex;
+                        }
                         
                     }
                     .srhov {
+                        @include st {
+                            display: none;
+                            
+                        }
                         display: flex;
                         flex-direction: column;
                         justify-content: space-between;
@@ -31,6 +43,10 @@
                     }
                 }
                 .srdef {
+                    @include st {
+                        max-width: 312px;
+                        height: 303px;
+                    }
                     display: flex;
                     flex-direction: column;
                     justify-content: space-between;
@@ -39,17 +55,34 @@
                     max-width: 472px;
                     height: 502px;
                     padding: 30px;
+                    @include st {
+                        padding: 15px;
+                    }
                     &__title {
+                        @include st {
+                            font-size: 18px;
+                            font-weight: 500;
+                            line-height: 25px;
+                        }
                         font-size: 26px;
                         font-weight: 500;
                     }
                     &__image {
                         max-width: 412px;
                         max-height: 220px;
+                        @include st {
+                            max-width: 262px;
+                            max-height: 145px;
+                            min-height: 0;
+                        }
                         min-height: 220px;
                         
                         &-image {
-
+                            @include st {
+                                max-width: 262px;
+                                max-height: 145px;
+                                min-height: 0;
+                            }
                             object-fit: cover;
                             width: 412px;
                             height: 220px;

@@ -3,6 +3,9 @@
         @include lg {
             max-width: 700px;
         }
+        @include st {
+            max-width: 374px;
+        }
         max-width: 1456px;
         margin-left: auto;
         margin-right: auto;
@@ -17,7 +20,10 @@
             grid-template-columns: repeat(2,1fr);
             grid-template-rows: repeat(2,1fr);
             display: grid;
-            
+            @include st {
+                grid-template-columns: repeat(1,1fr);
+                margin: 0;
+            }
             padding: 0;
             margin: 0;
             width: min-content;
@@ -51,6 +57,10 @@
                         width: 350px;
                         
                     }
+                    @include st {
+                        width: 346px;
+                        height: 329px;
+                    }
                     display: flex;
 
                     flex-direction: column;
@@ -63,21 +73,40 @@
                         max-width: 214px;
                         margin-left: 40px;
                         margin-top: 40px;
+                        @include st {
+                            font-size: 15px;
+                            width: min-content;
+                        }
                     }
                     &-picture {
                         position: relative;
                         padding-left: 136px;
                         padding-right: 136px;
+
                         @include xxl {
                             padding-left: 80px;
                             padding-right: 80px;
                             position: relative;
                         }
-                        
+                        @include st {
+                            padding-left: 100px;
+                            padding-right: auto;
+                            width: max-content;
+                        }
+                        &--image {
+                            @include st {
+                                width: 148px;
+                                height: 148px;
+
+                            }
+                        }
                         &--icon {
                             position: absolute;
                             left: 65%;
                             top: -15%;
+                            @include st {
+                                top: -20%;
+                            }
                             
                         }
                         
@@ -106,6 +135,10 @@
                     @include lg {
                         width: 350px;
                         
+                    }
+                    @include st {
+                        width: 346px;
+                        height: 329px;
                     }
                     border-radius: 6px;
                     border: solid 1px var(--color-gray2);
@@ -140,6 +173,20 @@
     }
 }
 
+@include st {
+    .wcard {
+        display: none;
+    }
+    .wcard1 {
+        display: block;
+    }
+    .wcard2 {
+        display: block;
+        .wcard__nothover {
+            
+        }
+    }
+}
 /* Card */
 
 /* Card */

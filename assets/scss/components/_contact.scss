@@ -75,27 +75,37 @@
 
 
 .contact {
-    &:before {
+    // &:before {
+    //     content: "";
+    //     background-image: url('/assets/img/images/conts.jpeg');
         
-        background-image: url('/assets/img/images/conts.jpeg');
         
-        
-    }   
+    // }   Не показывается
+    
     background: radial-gradient(#153d9a, #0c1f4c),  linear-gradient(151.59deg, #002A55 29.72%, rgba(0, 42, 85, 0) 60.06%), linear-gradient(19.11deg, #002A55 13.56%, rgba(12, 37, 94, 0) 59.08%), linear-gradient(90.27deg, #0C255E 0.46%, rgba(69, 99, 233, 0.69) 52.3%, rgba(12, 37, 94, 0.16) 99.99%), var(--color-accent);
     background-image: url('/assets/img/Vector.svg');
     background-position: bottom;
+    @include st {
+        background-position: bottom;
+        background-size: cover;
+    }
     background-size: 80%;
     background-repeat: no-repeat;
     
     .ccont {
+        
         padding-top: 140px;
         margin: 0;
         max-width: 1456px;
         margin-left: auto;
         margin-right: auto;
+        @include st {
+            padding-top: 60px;
+        }
         @include xxl {
             max-width: 800px;
         }
+
         @include lg {
             max-width: 700px;
         }
@@ -103,12 +113,25 @@
 
             font-size: 52px;
             font-weight: 400;
-
+            @include st {
+                max-width: 374px;
+                margin-left: auto;
+                margin-right: auto;
+                font-size: 36px;
+            }
         }
 
         &__content {
             display: flex;
             justify-content: space-between;
+            @include st {
+                flex-direction: column;
+            }
+            @include st {
+                max-width: 374px;
+                margin-left: auto;
+                margin-right: auto;
+            }
             .ctext {
                 &__text {
                     max-width: 590px;
@@ -116,6 +139,9 @@
                     font-weight: 400;
                     @include lg {
                         font-size: 24px;
+                    }
+                    @include st {
+                        line-height: 30px;
                     }
                     .hero {
                         color: var(--color-accent-second);
@@ -132,7 +158,11 @@
                     grid-template-columns: repeat(2, 1fr);
                     display: grid;
                     gap: 20px;
-
+                    @include st {
+                        display: flex;
+                        flex-direction: column;
+                        width: auto;
+                    }
                     &-input {
                         margin-top: 63px;
                         background: none;
@@ -158,6 +188,9 @@
                     display: flex;
                     gap: 10px;
                     width: min-content;
+                    @include st {
+                        margin-left: 0;
+                    }
                     &-text {
                         white-space: nowrap;       /* Запрещает перенос текста на новую строку */
                         overflow: hidden;          /* Обрезает текст, выходящий за пределы блока */
@@ -173,28 +206,47 @@
         }
     }
 
-
+    .cnews {
+        padding-top: 120px;
+    }
     .cfoot {
+        
         margin-top: 100px;
         max-width: 1456px;
         margin-left: auto;
         margin-right: auto;
         position: relative;
         overflow: hidden;
+        @include st {
+            overflow: visible;
+        }
         @include xxl {
             max-width: 800px;
         }
         @include lg {
             max-width: 700px;
         }
+        @include st {
+            max-width: 374px;
+            position: relative;
+        }
         .cfup {
             position: inherit;
+            @include st {
+                
+            }
             z-index: 3;
             border-bottom: solid 1px var(--color-white);
             padding-bottom: 26px;
             display: flex;
             justify-content: space-between;
+            @include st {
+                flex-direction: column;
+            }
             &__mail {
+                @include st {
+                    margin-top: 50px;
+                }
                 &-title {
                     color: var(--color-accent-second);
                     font-size: 18px;
@@ -208,6 +260,9 @@
             }
             &__sell {
                 text-align: right;
+                @include st {
+                    text-align: left;
+                }
                 &-title {
                     color: var(--color-accent-second);
                     font-size: 18px;
@@ -221,10 +276,19 @@
 
             }
             &__subscribe {
+                @include st {
+                    position: absolute;
+                    top: -70px;
+                    flex-direction: column-reverse;
+                }
                 display: flex;
                 flex-direction: column;
                 align-items: center;
                 gap: 14px;
+                @include st {
+                    align-items: start;
+                    
+                }
                 &-link {
                     border-bottom: solid 1px var(--color-white);
                     font-weight: 500;
@@ -232,6 +296,9 @@
                     text-transform: uppercase;
                 }
                 &-number {
+                    @include st {
+                        margin-bottom: 30px;
+                    }
                     font-size: 400;
                     font-size: 36px;
                     
@@ -241,10 +308,21 @@
         .cfbot {
             
             margin-top: 42px;
+            @include st {
+                margin-top: 30px;
+                padding-bottom: 50px;
+            }
             display: flex;
             justify-content: space-between;
             position: inherit;
             z-index: 2;
+            @include st {
+                flex-direction: column;
+                align-items: center;
+            }
+            &__text {
+                font-weight: 400;
+            }
             &__likeit {
                 gap: 14px;
                 display: flex;
@@ -254,6 +332,7 @@
                     font-weight: 400;
                     margin-top: 4px;
                     margin-bottom: 0;
+
                     
                 }
                 &-icon {
@@ -265,6 +344,9 @@
             position: absolute;
             top: 120px;
             z-index: 1;
+            @include st {
+                top: 500px;
+            }
             @include xxl {
                 width: 800px;
                 top: 160px;

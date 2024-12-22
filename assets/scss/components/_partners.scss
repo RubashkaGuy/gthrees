@@ -45,6 +45,10 @@
             color: var(--color-accent);
             margin-top: 60px;
             gap: 54px;
+            @include fullhd {
+                justify-content: space-between;
+                gap: unset;
+            }
             @include xxl {
                 gap: 20px;
                 justify-content: space-between;

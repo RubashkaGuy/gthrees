@@ -1,78 +1,176 @@
 .managment {
-    
+
     .macont {
-        
-        min-width: 1688px;    
+
+        min-width: 1688px;
         margin-left: 232px;
         margin-bottom: 140px;
         margin-top: 140px;
+
+        @include st {
+            min-width: 374px;
+            max-width: 374px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
         &__title {
             font-size: 52px;
             font-weight: 400;
-            color: var(--color-accent);    
+            color: var(--color-accent);
         }
+
         .manag {
+
             height: 758px;
+            @include st {
+                height: unset;
+            }
+
             border-top-left-radius: 4px;
             border-bottom-left-radius: 4px;
             display: flex;
             position: relative;
+
+            @include st {
+                flex-direction: column;
+            }
+
             background-color: var(--color-accent);
+
             &__line {
+                @include st {
+                    position: absolute;
+                    left: 169px;
+                    z-index: 2;
+                    top: 6px;
+                }
+
                 position: absolute;
                 left: 435px;
                 z-index: 2;
                 top: 20px;
+
                 &-text {
                     border-bottom: solid 1px var(--color-white);
                     min-width: 1021px;
                     padding-bottom: 12px;
                     font-weight: 500;
                     font-size: 14px;
-                    
+
                 }
             }
+
             &__photo {
                 z-index: 0;
                 position: relative;
+
+                &-image {
+                    @include st {
+                        width: 374px;
+                        height: 460px;
+                    }
+                }
+
                 &-text {
+                    @include st {
+                        top: 383px;
+                    }
+
+                    font-weight: 400;
                     position: absolute;
                     bottom: 0;
                     width: 169px;
                     left: 40px;
                 }
             }
+
             &__info {
+                @include st {
+                    margin-left: 20px;
+                }
 
                 margin-top: 120px;
                 margin-left: 20px;
-                &-name {
-                  font-size: 48px;  
-                  line-height: 37px;
-                  font-weight: 600;
-
-                  
-                    
+                @include st {
+                    margin-top: 20px;
                 }
+                &-name {
+                    @include st {
+                        display: none;
+
+                    }
+
+                    font-size: 48px;
+                    line-height: 37px;
+                    font-weight: 600;
+
+
+
+                }
+
+                &-mobile {
+                    display: none;
+
+                    @include st {
+                        margin: 0;
+                        font-size: 36px;
+                        white-space: nowrap;
+                        display: block;
+                    }
+
+                    font-size: 48px;
+                    line-height: 37px;
+                    font-weight: 600;
+
+
+
+
+                }
+
                 .mantext {
-                    
+
                     display: flex;
+
+                    @include st {
+                        flex-direction: column;
+                    }
+
                     &__quot {
                         margin-bottom: auto;
                         margin-top: 18px;
                         margin-right: 19px;
+                        @include st {
+                            margin: 0;
+                            margin-top: 20px;
+                            width: 25px;
+                            position: relative;
+                            right: 10px;
+                        }
                     }
+
                     &__text {
                         font-size: 16px;
                         font-weight: 400;
                         line-height: 22px;
                         width: 768px;
+                        @include st {
+                            width: unset;
+                            line-height: 20px;
+                        }
                     }
                 }
+
                 &-sign {
                     width: 364px;
                     margin-left: 477px;
                     margin-top: 122px;
+                    @include st {
+                        margin: 0;
+                        width: 194px;
+                        margin-left: 140px;
+                        margin-bottom: 20px;
+                    }
                 }
             }
         }

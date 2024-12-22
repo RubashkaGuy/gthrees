@@ -6,6 +6,19 @@
             min-height: 136px;
             padding-top: 42px;
             overflow: hidden;
+            @include st {
+                padding-top: 15px;
+            }
+            &-text {
+                @include st {
+                    margin-left: 20px;
+                    font-size: 34px;
+                    color: var(--color-accent);
+                    font-weight: 800;
+                    text-transform: uppercase;
+                    padding-bottom: 20px;
+                }
+            }
         }
     }
     .cbot {
@@ -20,11 +33,22 @@
             max-width: 1456px;
             margin-right: auto;
             margin-left: auto;
+            @include xxl{
+                max-width: calc(100vw - 20vw);
+            }
+            @include st {
+                max-width: 374px;
+            }
             &__text {
                 display: flex;
                 margin: auto;
                 top: -95px;
                 position: relative;
+                @include st {
+                    width: 414px;
+                    top: -30px;
+                    right: 20px;
+                }
                 
             }
             &__desc {
@@ -54,6 +78,9 @@
                         // transform: translate(380px,-69px);
                         margin: 0px 0 0 0;
                         &__text {
+                            @include st {
+                                margin-top: 100px;
+                            }
                             font-weight: 400;
                             font-size: 18px;
                             line-height: 25px;
@@ -120,3 +147,19 @@
 
 
 // О компании
+
+
+
+// О компании
+.efcompany {
+    position: relative;
+    top: 50px;
+    .efcompanytext {
+
+    }
+
+}
+
+.efcompanybutton {
+    padding-top: 20px;
+}
