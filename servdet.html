@@ -17,19 +17,42 @@
     <div class="application__template">
         <header class="application__header header" id="header">
             <div class="header__container container nav">
-                <a href="#!" class="nav__logo">
+                <a href="/index.html" class="nav__logo">
                     <img src="/assets/img/icons/logo.svg" alt="Логотип GTHREES" class="nav__logo-icon">
                 </a>
+                <a href="/index.html" class="nav__mobile">
+                    <img src="/assets/img/icons/logo-mobile.svg" alt="Логотип GTHREES" class="nav__logo-icon">
+                </a>
                 <ul class="nav__menu">
-                    <li class="nav__menu-item navitem">
-                        <a href="" class="navitem__item">
-                            <span class="navitem__item-text">Наши услуги</span>
-                            <img src="assets/img/icons/arrow-lng.svg" alt="" class="navitem__item-image">
+                    <li class="nav__menu-item navitem serve">
+                        <a href="#!" class="navitem__item serve__item">
+                            <span class="navitem__item-text serve__item-text">Наши услуги</span>
+                            <img src="assets/img/icons/arrow-lng.svg" alt="" class="navitem__item-image serve__item-image">
                         </a>
-
+                        <ul class="serve__dropdown">
+                            <li class="serve__dropdown-item">
+                                <a href="/services.html" class="serve__dropdown-item--link">Авиаперевозки</a>
+                            </li>
+                            <li class="serve__dropdown-item">
+                                <a href="/services.html" class="serve__dropdown-item--link">Автомобильные перевозки</a>
+                            </li>
+                            <li class="serve__dropdown-item">
+                                <a href="/services.html" class="serve__dropdown-item--link">Мультимодальные перевозки</a>
+                            </li>
+                            <li class="serve__dropdown-item">
+                                <a href="/services.html" class="serve__dropdown-item--link">Железнодорожные перевозки</a>
+                            </li>
+                            <li class="serve__dropdown-item">
+                                <a href="/services.html" class="serve__dropdown-item--link">Перевозки тяжеловесных и негабаритных грузов</a>
+                            </li>
+                            <li class="serve__dropdown-item">
+                                <a href="/services.html" class="serve__dropdown-item--link">Перевозки опасных грузов</a>
+                            </li>
+                        </ul>
                     </li>
+                    
                     <li class="nav__menu-item navitem">
-                        <a href="" class="navitem__item">Контакты</a>
+                        <a href="/contacts.html" class="navitem__item">Контакты</a>
                     </li>
                     <li class="nav__menu-item navitem">
                         <a href="tel:375295462567" class="navitem__item">+375(29)546-25-67</a>
@@ -115,13 +138,13 @@
                             <div class="ofcards__card">
                                 <h3 class="ofcards__card-text">Обещанное время доставки</h3>
                             </div>
-                            <div class="ofcards__card ofphoto1">
+                            <div class="ofcards__card ofphoto1 ofphoto">
                                 
                             </div>
                             <div class="ofcards__card">
                                 <h3 class="ofcards__card-text">Стандартизированная цена всё включено</h3>
                             </div>
-                            <div class="ofcards__card ofphoto2">
+                            <div class="ofcards__card ofphoto2 ofphoto">
                 
                             </div>
                             <div class="ofcards__card">
@@ -136,7 +159,7 @@
                             <div class="ofcards__card">
                                 <h3 class="ofcards__card-text">Чартерные рейсы</h3>
                             </div>
-                            <div class="ofcards__card ofphoto3">
+                            <div class="ofcards__card ofphoto3 ofphoto">
             
                             </div>
                         </div>
@@ -163,37 +186,45 @@
                 </section>
                 <section class="company">
                     <div class="company__container cmp">
+                        <div class="cmp__text">
+                            <h2 class="cmp__text-title">Почему мы</h2>
+                            <p class="cmp__text-subtitle">Наша компания предоставляет широкий спектр услуг по доставке
+                                грузов наземным, морским, воздушным транспортом, складской обработке и страхованию
+                                грузов. <br> <br>
+                                Основываясь на глубоком понимании специфики различных отраслей, мы применяем
+                                индивидуальный подход к потребностям наших клиентов в области логистики.</p>
+                        </div>
                         <div class="cmp__map">
                             <div class="cmp__map-dot dot dot1">
-                                <div class="dot__text dot1__text">
+                                <div class="dot__text dot1__text mapleft">
                                     <h3 class="dot__text-title dot1__text-title">Загрузили</h3>
                                     <p class="dot__text-subtitle dot1__text-subtitle">96 т памперсов</p>
                                 </div>
                                 <img src="assets/img/icons/dot.svg" alt="" class="dot__image dot1__image">
                             </div>
                             <div class="cmp__map-dot dot dot2">
-                                <div class="dot__text dot2__text">
+                                <div class="dot__text dot2__text mapright">
                                     <h3 class="dot__text-title dot2__text-title">Доставили</h3>
                                     <p class="dot__text-subtitle dot2__text-subtitle">145 т пильменей</p>
                                 </div>
                                 <img src="assets/img/icons/dot.svg" alt="" class="dot__image dot2__image">
                             </div>
                             <div class="cmp__map-dot dot dot3">
-                                <div class="dot__text dot3__text">
+                                <div class="dot__text dot3__text mapleft">
                                     <h3 class="dot__text-title dot3__text-title">Получили</h3>
                                     <p class="dot__text-subtitle dot3__text-subtitle">Положительный отзыв</p>
                                 </div>
                                 <img src="assets/img/icons/dot.svg" alt="" class="dot__image dot3__image">
                             </div>
                             <div class="cmp__map-dot dot dot4">
-                                <div class="dot__text dot4__text">
+                                <div class="dot__text dot4__text mapright">
                                     <h3 class="dot__text-title dot4__text-title">Отследили</h3>
                                     <p class="dot__text-subtitle dot4__text-subtitle">Местоположение груза</p>
                                 </div>
                                 <img src="assets/img/icons/dot.svg" alt="" class="dot__image dot5__image">
                             </div>
                             <div class="cmp__map-dot dot dot5">
-                                <div class="dot__text dot5__text">
+                                <div class="dot__text dot5__text mapleft">
                                     <h3 class="dot__text-title dot5__text-title">Доставили</h3>
                                     <p class="dot__text-subtitle dot5__text-subtitle">145 т пильменей</p>
                                 </div>
@@ -201,20 +232,22 @@
                             </div>
                             <img src="assets/img/icons/map.svg" alt="Изображение карты мира" class="cmp__map-map">
                         </div>
-
-                        </div>
+                        <a href="/company.html" class="cmp__link">
+                            <h3 class="cmp__link-text">УЗНАТЬ БОЛЬШЕ</h3>
+                            <img src="assets/img/icons/arrow.svg" alt="Значок стрелки" class="cmp__link-icon">
+                        </a>
                     </div>
                 </section>
                 <section class="we">
                     <div class="we__container wecont">
                         <h2 class="wecont__title">Почему мы</h2>
-                        <div class="wecont__cards">
-                            <div class="wecont__cards-card wcard">
+                        <div class="wecont__cards wcards">
+                            <div class="wecont__cards-card wcard wcard1">
                                 <div class="wcard__nothover">
                                     <h3 class="wcard__nothover-title">Гарантии сохранности</h3>
                                     <div class="wcard__nothover-picture">
                                         <img src="assets/img/icons/c1.svg" alt=""
-                                            class="wcard__nothoveer-picture--icon">
+                                            class="wcard__nothover-picture--icon">
                                         <img src="assets/img/images/we1.png" alt="Изображение контейнеров"
                                             class="wcard__nothover-picture--image">
                                     </div>
@@ -226,12 +259,12 @@
                                         им приоритет в работе.</p>
                                 </div>
                             </div>
-                            <div class="wecont__cards-card wcard">
+                            <div class="wecont__cards-card wcard2 wcard cardleft">
                                 <div class="wcard__nothover">
                                     <h3 class="wcard__nothover-title">Экологические стандарты</h3>
                                     <div class="wcard__nothover-picture">
                                         <img src="assets/img/icons/c2.svg" alt=""
-                                            class="wcard__nothoveer-picture--icon">
+                                            class="wcard__nothover-picture--icon">
                                         <img src="assets/img/images/we2.png" alt="Изображение контейнеров"
                                             class="wcard__nothover-picture--image">
                                     </div>
@@ -248,7 +281,7 @@
                                     <h3 class="wcard__nothover-title">Индивидуальный подход</h3>
                                     <div class="wcard__nothover-picture">
                                         <img src="assets/img/icons/c3.svg" alt=""
-                                            class="wcard__nothoveer-picture--icon">
+                                            class="wcard__nothover-picture--icon">
                                         <img src="assets/img/images/we3.png" alt="Изображение контейнеров"
                                             class="wcard__nothover-picture--image">
                                     </div>
@@ -260,12 +293,12 @@
                                         им приоритет в работе.</p>
                                 </div>
                             </div>
-                            <div class="wecont__cards-card wcard">
+                            <div class="wecont__cards-card wcard cardleft">
                                 <div class="wcard__nothover">
                                     <h3 class="wcard__nothover-title">Высокое качество услуг</h3>
                                     <div class="wcard__nothover-picture">
                                         <img src="assets/img/icons/c4.svg" alt=""
-                                            class="wcard__nothoveer-picture--icon">
+                                            class="wcard__nothover-picture--icon">
                                         <img src="assets/img/images/we4.png" alt="Изображение контейнеров"
                                             class="wcard__nothover-picture--image">
                                     </div>
@@ -280,75 +313,66 @@
                         </div>
                     </div>
                 </section>
-                <section class="request">
-                    <div class="request__container rcont">
-                        <h2 class="rcont__title">Связаться с нами</h2>
-                        <div class="rcont__request">
-                            <h3 class="rcont__request-text">Оставьте заявку и наш менеджер свяжется с вами <span class="rcont__request-text--highlited">в ближайшее время</span></h3>
-                            <div class="rcont__request-form rform">
-                                <div class="rform__inputs first">
-                                    <div class="rform__input-container rinput">
-                                        <input type="text" placeholder="ФИО" class="rinput__input">
-                                    </div>
-                                    <div class="rform__input-container rinput">
-                                        <input type="text" placeholder="Телефон" class="rinput__input">
-                                    </div>
-                                </div>
-                                <div class="rform__inputs second">
-                                    <div class="rform__input-container rinput">
-                                        <input type="text" placeholder="E-mail" class="rinput__input">
-                                    </div>
-                                    <div class="rform__inputs-container selector rinput">
-                                        <p class="selector__text">Услуга</p>
-                                        <div class="selector__text-selector slt">
-                                            <h2 class="slt__title">Автоперевозки</h2>
-                                            <img src="assets/img/icons/arrow-down.svg" alt="" class="slt__icon">
+                <section class="contact" id="call">
+                    <div class="contact__container ccont">
+                        <h2 class="ccont__title">Связаться с нами</h2>
+                        <div class="ccont__content">
+                            <div class="ccont__content-text ctext">
+                                <h3 class="ctext__text">Оставьте заявку и наш менеджер свяжется с вами в <span class="hero">ближайшее время</span></h3>
+                            </div>
+                            <div class="ccont__content-form cform">
+                                <div class="cform__form">
+                                    
+                                    <input type="text" placeholder="ФИО" class="cform__form-input">
+                                    <input type="text" placeholder="Телефон" class="cform__form-input">
+                                    <input type="text" placeholder="E-mail" class="cform__form-input">
+                                    <div class="cform__form-input selector">
+                                        <h3 class="selector__text">Услуга</h3>
+                                        <div class="selector__select">
+                                            <span class="selector__select-title">автоперевозки</span>
+                                            <img src="assets/img/icons/arrow-down.svg" alt="" class="selector__select-image">
+                                        </div>
+                                        <div class="selector__options">
+                                            <div class="selector__select-option" data-value="auto">Автоперевозки</div>
+                                            <div class="selector__select-option" data-value="air">Авиаперевозки</div>
+                                            <div class="selector__select-option" data-value="mmod">Мультимодальные перевозки</div>
+                                            <div class="selector__select-option" data-value="railroad">Железнодорожные перевозки</div>
+                                            <div class="selector__select-option" data-value="heavy">Перевозки тяжелых и негабаритных грузов</div>
+                                            <div class="selector__select-option" data-value="danger">Перевозки опасных грузов</div>
                                         </div>
                                     </div>
+                                    <input type="text" placeholder="Сообщение" class="cform__form-input message">
                                 </div>
-                                <div class="rform__inputs message">
-                                    <div class="rform__inputs-container rinput">
-                                        <input type="text" placeholder="Сообщение" class="rinput__message">
-                                    </div>
-                                </div>
-                                <a href="#!" class="rform__button">
-                                    <h3 class="rform__button-text">ОТПРАВИТЬ ЗАЯВКУ</h3>
-                                    <img src="assets/img/icons/arrow.svg" alt="" class="rform__button-icon">
+                                <a href="#!" class="cform__button">
+                                    <h3 class="cform__button-text">Отправить заявку</h3>
+                                    <img src="assets/img/icons/arrow.svg" alt="" class="cgorm__button-arrow">
                                 </a>
+                            </div>
                         </div>
                     </div>
-                    <div class="rcont__footer rfoot">
-                        <div class="rfoot__top">
-                            <div class="rfoot__top-coop rcoop">
-                                <h3 class="rcoop__title">Для сотрудничества</h3>
-                                <a href="mail: info@gthrees.com" class="rcoop__subtitle">info@gthrees.com</a>
+                    <div class="contact__footer cfoot">
+                        <div class="cfoot__upper cfup">
+                            <div class="cfup__mail">
+                                <h3 class="cfup__mail-title">Для сотрудничества:</h3>
+                                <a href="#!" class="cfup__mail-mail">info@gthrees.com</a>
                             </div>
-                            <div class="rfoot__top-num rnum">
-                                <a href="#!" class="rnum__button">
-                                    ПОДПИСАТЬСЯ
-                                </a>
-                                <div class="rnum__number">
-                                    <a href="#!" class="rnum__number-text">+375(17)252-22-25</a>
-                                </div>
-                                
+                            <div class="cfup__subscribe">
+                                <a href="#!" class="cfup__subscribe-link">Подписаться</a>
+                                <a href="#!" class="cfup__subscribe-number">+375(17)252-22-25</a>
                             </div>
-                            <div class="rfoot__top-sell rsell">
-                                <h3 class="rsell__title">Отдел продаж:</h3>
-                                <a href="#!" class="rsell__subtitle">sales@gthrees.com</a>
+                            <div class="cfup__sell">
+                                <h3 class="cfup__sell-title">Отдел продаж:</h3>
+                                <a href="#!" class="cfup__sell-mail">sales@gthrees.com</a>
                             </div>
                         </div>
-                        <div class="rfoot__bottom rbot">
-                            <div class="rbot__copyright">
-                                <h3 class="rbot__copyright-title">© 2023, GTHREES</h3>
-                            </div>
-                            <div class="rbot__ref">
-                                <h3 class="rbot__ref-text">Разработано в</h3>
-                                <img src="assets/img/icons/likeit.svg" alt="" class="rbot__ref-image">
-                            </div>
+                        <div class="contact__bottom cfbot">
+                            <h3 class="cfbot__text">© 2023, GTHREES</h3>
+                            <a href="#!" class="cfbot__likeit">
+                                <h3 class="cfbot__likeit-text">Разработано в</h3>
+                                <img src="assets/img/icons/likeIt.svg" alt="" class="cfbot__likeit-icon">
+                            </a>
                         </div>
-                        
-                    </div>
-                    <img src="assets/img/icons/title.svg" alt="" class="rcont__logo">
+                        <img src="assets/img/icons/title-dark.svg" alt="" class="cfoot__title">
                     </div>
                 </section>
             </div>

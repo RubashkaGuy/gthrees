@@ -344,9 +344,7 @@
             position: absolute;
             top: 120px;
             z-index: 1;
-            @include st {
-                top: 500px;
-            }
+
             @include xxl {
                 width: 800px;
                 top: 160px;
@@ -355,10 +353,18 @@
                 width: 700px;
                 top: 170px;
             }
+            @include st {
+                top: 380px;
+                width: 374px;
+            }
         }
     }
 }
 
 /* XXL 2 */
 
-
+.cfoot__title {
+    @include st {
+        width: 374px;
+    }
+}

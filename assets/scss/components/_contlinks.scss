@@ -4,6 +4,11 @@
     max-width: 1456px;
     display: flex;
     justify-content: space-between;
+    @include st {
+        flex-direction: column;
+        gap: 30px;
+        max-width: 374px;
+    }
     margin-top: 60px;
     .cleft {
         
@@ -11,13 +16,25 @@
             font-size: 26px;
             font-weight: 500;
             color: var(--color-white);
+            @include st {
+                font-size: 18px;
+            }
+            
         }
         &__contacts {
+            @include st {
+                line-height: 35px;
+                font-size: 16px;
+            }
             font-size: 18px;
             font-weight: 500;
             line-height: 25px;
         }
         &__mail {
+            @include st {
+                font-size: 16px;
+                font-weight: 400;
+            }
             display: flex;
             flex-direction: column;
             gap: 10px;
@@ -36,7 +53,13 @@
     }
     .cright {
         margin-right: 246px;
+        @include st {
+            margin: 0;
+        }
         &__title {
+            @include st {
+                font-size: 18px;
+            }
             font-size: 26px;
             font-weight: 500;
             color: var(--color-white);
@@ -45,6 +68,13 @@
             font-size: 18px;
             font-weight: 500;
             line-height: 25px;
+        }
+        &__link {
+            position: relative;
+            top: 30px;
+            color: var(--color-accent-second);
+            font-size: 16px;
+            border-bottom: solid 1px var(--color-accent-second);
         }
     }
 }

@@ -1,34 +1,236 @@
 .burger {
     display: none;
     background-color: var(--color-accent);
+    position: relative;
     .brcont {
         max-width: 1456px;
         margin-right: auto;
         margin-left: auto;
         padding-top: 180px;
         padding-bottom: 180px;
-        .fclm {
-            display: flex;
-            &__col {
-                &-title {
-
+        &__cross {
+            position: absolute;
+            top: 66px;
+            left: 1658px;
+            border: solid 1px var(--color-white);
+            padding: 15px;
+            border-radius: 100%;
+            cursor: pointer;
+            @include st {
+                left: 374px;
+                top: 20px;
+                border: none;
+                padding: 0;
+            }
+        }
+        @include st {
+            padding-top: 30px;
+            padding-bottom: 30px;
+            max-width: 374px;
+        }
+        &__top {
+            border-bottom: solid 1px var(--color-gray4);
+            padding-bottom: 80px;
+            @include st {
+                padding-bottom: 0;
+                border: 0;
+            }
+            .brgrid {
+                display: flex;
+                @include st {
+                    flex-direction: column;
                 }
-                &-column {
-                    display: grid;
-                    grid-template-columns: repeat(2,1fr);
-                    column-gap: 32px;
-                    margin: 0;
-                    padding: 0;
-                    w
-                    &--text {
+                .brcol {
+                    
+                    &__title {
+                        font-size: 34px;
+                        text-transform: uppercase;
+                        @include st {
+                            font-size: 24px;
+                        }
+                    }
+                    &__columns {
+                        display: grid;
+                        
+                        gap: 30px;
+                        grid-template-columns: repeat(2,1fr);
+                        @include st {
+                            display: flex;
+                            flex-direction: column;
+                            gap: 16px;
+                        }
+                        &-item {
+                            @include st {
+                                font-size: 14px;
+                                max-width: 274px;
+                            }
+                            font-size: 18px;
+                            font-weight: 500;
+                            text-transform: uppercase;
+                        }
                         
                     }
-                    
+
+
+
+                }
+                .brcoltopright {
+                    padding-left: 400px;
+                    margin-right: 120px;
+                    @include st {
+                        padding: 0;
+
+                    }
+                }
+                .brcompany {
+                    grid-template-columns: repeat(1,1fr);
                 }
             }
-            &__comp {
+        }
+        &__bottom {
+            padding-top: 80px;
+            @include st {
+                padding: unset;
+            }
+            .brbgrid {
+                .brbcol {
+                    &__title {
+                        @include st {
+                            font-size: 24px;
+                        }
+                        font-size: 34px;
+                        font-weight: 800;
+                    }
+                    &__columns {
+                        display: flex;
+                        justify-content: space-between;
+                        .brbel {
+                            @include st {
+                                display: none;
+                            }
+                            &__title {
+                                font-size: 18px;
+                                font-weight: 500;
+                                    
+                            }
+                            &__contacts {
+                                &-addr {
+                                    margin-bottom: 10px;
+                                    font-size: 18px;
+                                    font-weight: 500;
+                                }
+                                &-number {
+                                    font-size: 18px;
+                                    font-weight: 500;
+                                }
 
+                            }
+                            &__mail {
+                                display: flex;
+                                flex-direction: column;
+                                margin-top: 24px;
+                                &-email {
+                                    font-size: 18px;
+                                    font-weight: 500;
+                                    margin-bottom: 10px;
+                                }       
+                            }
+                        }
+                        .brrus {
+                            @include st {
+                                display: none;
+                            }
+                            &__title {
+                                font-size: 18px;
+                                font-weight: 500;
+                                
+                            }
+                            &__contacts {
+
+                                &-addr{
+                                    
+                                }
+                            }
+                        }
+                        .brbconts {
+                            position: relative;
+                            right: 100px;
+                            @include st {
+                                right: unset;
+                            }
+                            &__number {
+                                @include st {
+                                    font-size: 24px;
+                                }
+                                font-size: 30px;
+                                font-weight: 400;
+                            }
+                            &__sotr {
+                                @include st {
+                                    display: none;
+                                }
+                                &-title {
+                                    color: var(--color-accent-second);
+                                    font-size: 18px;
+                                    &::after {
+                                        content: " :";
+                                    }
+                                    
+                                }
+                                &-email {
+                                    font-size: 20px;
+                                    font-weight: 400;
+                                }
+                            }
+                            &__sell {
+                                @include st {
+                                    display: none;
+                                }
+                                &-title {
+                                    color: var(--color-accent-second);
+                                    font-size: 18px;
+                                    &::after {
+                                        content: " :";
+                                    }
+                                    
+                                }
+                                &-email {
+                                    font-size: 20px;
+                                    font-weight: 400;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        &__mobile {
+            display: none;
+            @include st {
+                display: block;
+            }
+            .brsoc {
+
+                display: flex;
+                gap: 26px;
+                margin-top: 20px;
+            }
+            .brpub {
+                margin-top: 24px;
+                display: flex;
+                justify-content: space-between;
+                &__item {
+                    font-size: 16px;
+                    font-weight: 600;
+
+                }
             }
         }
     }
+
+
+}
+
+.bractive {
+    display: block;
 }

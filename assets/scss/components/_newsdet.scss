@@ -5,6 +5,10 @@
         margin-left: auto;
         margin-right: auto;
         margin-top: 140px;
+        @include st {
+            max-width: 374px;
+            
+        }
         &__button {
             display: flex;
             gap: 10px;
@@ -23,8 +27,15 @@
 
         .detnews {
             display: flex;
+            @include st {
+                flex-direction: column;
+            }
             padding-top: 60px;
             &__text {
+                @include st {
+                    display: flex;
+                    flex-direction: column-reverse;
+                }
                 &-title {
                     width: 535px;
                     font-size: 24px;
@@ -32,17 +43,29 @@
                     color: var(--color-text);
                     border-bottom: solid 1px var(--color-gray2);
                     padding-bottom: 60px;
+                    @include st {
+                        padding-bottom: 0;
+                        border: 0;
+                    }
                     
                 }
                 .detnum {
                     
                     &__number {
+                        @include st {
+                            display: none;
+                        }
                         color: var(--color-accent);
                         font-size: 84px;
                         font-weight: 400;
                         margin: 0;
                     }
                     &__text {
+                        @include st {
+                            &::before {
+                                content: "22 ";
+                            }
+                        }
                         font-size: 16px;
                         font-weight: 500;
                         line-height: 22px;
@@ -54,9 +77,16 @@
 
             &__desc {
                 padding-left: 60px;
+                @include st {
+                    padding: 0;
+                }
                 &-image {
                     width: 801px;
                     height: 391px;
+                    @include st {
+                        width: 373px;
+                        height: 222px;
+                    }
                     object-position: center; 
                     object-fit: cover;
                 }

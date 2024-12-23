@@ -5,7 +5,13 @@
         margin-right: auto;
         margin-top: 140px;
         margin-bottom: 140px;
+        @include st {
+            max-width: 374px;
+        }
         &__title {
+            @include st {
+                font-size: 36px;
+            }
             font-size: 52px;
             font-weight: 400;
             color: var(--color-accent);
@@ -14,12 +20,30 @@
             display: grid;
             grid-template-columns: repeat(3,1fr);
             grid-template-rows: repeat(3,1fr);
+            @include st {
+                display: flex;
+                flex-direction: column;
+            }
             gap: 20px;
             &__card {
                 min-width: 472px;
                 min-height: 374px;
+                @include st {
+                    min-width: 374px;
+                    min-height: 110px;
+                    width: 374px;
+                    height: 110px;
+                    border-radius: 4px;
+                }
                 background: linear-gradient(135deg, #09325B 0%, rgba(69, 99, 233, 0.3) 100%), #09325B;
                 &-text {
+                    @include st {
+                        margin: 0;
+                        padding: 30px;
+                        font-size: 18px;
+                        font-weight: 500;
+                        line-height: 25px;
+                    }
                     margin-left: 40px;
                     margin-top: 226px;
                     max-width: 346px;
@@ -42,6 +66,11 @@
                 background-image: url('/assets/img/images/offer/airport3.jpg');
                 background-position: center;
                 background-size: cover;
+            }
+            .ofphoto {
+                @include st {
+                    display: none;
+                }
             }
         }
     }

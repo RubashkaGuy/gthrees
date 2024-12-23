@@ -5,6 +5,7 @@
         max-width: 1456px;
         margin-left: auto;
         margin-right: auto;
+
         &__title {
             font-size: 52px;
             color: var(--color-accent);
@@ -37,9 +38,16 @@
                 }
 
                 .hiinfo {
+                    @include st {
+                        max-width: 374px;
+                    }
                     display: none;
                     padding-left: 40px;
                     &__text {
+                        @include st {
+                            font-size: 14px;
+                            line-height: 19px;
+                        }
                         font-size: 16px;
                         font-weight: 400;
                         color: var(--color-text);
@@ -48,6 +56,9 @@
                     }
                     &__exp {
                         &-title {
+                            @include st {
+                                font-size: 16px;
+                            }
                             margin-top: 40px;
                             font-size: 18px;
                             font-weight: 500;
@@ -55,6 +66,10 @@
                             color: var(--color-text);
                         }
                         &-subtitle {
+                            @include st {
+                                font-size: 14px;
+                                line-height: 19px;
+                            }
                             margin: 0;
                             font-size: 16px;
                             font-weight: 400;
@@ -91,6 +106,10 @@
                         &__inputs {
                             display: grid;
                             grid-template-columns: repeat(2,1fr);
+                            @include st {
+                                display: flex;
+                                flex-direction: column;
+                            }
 
                             gap: 20px;
                             &-input {

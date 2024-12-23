@@ -79,3 +79,15 @@ document.addEventListener("DOMContentLoaded", () => {
 });
 
 
+// Меню
+document.querySelectorAll('.nav__burger').forEach(button => {
+    button.addEventListener('click', () => {
+        document.querySelector('.burger').classList.toggle('bractive');
+    });
+});
+
+document.querySelectorAll('.brcont__cross').forEach(button => {
+    button.addEventListener('click', () => {
+        document.querySelector('.burger').classList.toggle('bractive');
+    });
+});
