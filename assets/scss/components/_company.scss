@@ -142,6 +142,12 @@
 }
 
 .dot2 {
+    @include xxl {
+        display: none;
+    }
+    @include st {
+        display: block;
+    }
     left: 853px;
     top: 256px;
     &__text {
@@ -149,12 +155,23 @@
     }
 }
 .dot3 {
-    
+    @include xxl {
+        display: none;
+    }
+    @include st {
+        display: block;
+    }
     left: 683px;
     top: 418px;
 
 }
 .dot4 {
+    @include xxl {
+        display: none;
+    }
+    @include st {
+        display: block;
+    }
     left: 1176px;
     top: 590px;
     &__text {
@@ -163,6 +180,12 @@
     }
 }
 .dot5 {
+    @include xxl {
+        display: none;
+    }
+    @include st {
+        display: block;
+    }
     left: 432px;
     top: 629px;
 }

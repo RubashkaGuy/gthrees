@@ -5,6 +5,13 @@
         margin-left: auto;
         margin-top: 140px;
         margin-bottom: 140px;
+        @include xxl {
+            max-width: 820px;
+
+        }
+        @include lg {
+            max-width: 576px;
+        }
         @include st {
             max-width: 374px;
         }
@@ -21,6 +28,9 @@
 
         }
         &-subtitle {
+            @include xxl {
+                margin-left: 0;
+            }
             color: var(--color-text);
             font-size: 24px;
             font-weight: 400;

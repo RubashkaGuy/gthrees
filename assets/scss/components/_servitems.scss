@@ -3,6 +3,12 @@
         max-width: 1456px;
         margin-left: auto;
         margin-right: auto;
+        @include xxl {
+            
+        }
+        @include lg {
+            max-width: 576px;
+        }
         @include st {
             max-width: 374px;
         }
@@ -17,6 +23,13 @@
             display: grid;
             grid-template-columns: repeat(3,1fr);
             grid-template-rows: repeat(1,3fr);
+            @include xxl {
+                grid-template-columns: repeat(2,1fr);
+                grid-template-rows: repeat(2,1fr);
+            }
+            @include lg {
+                grid-template-columns: repeat(1,1fr);
+            }
             @include st {
                 display: flex;
             }

@@ -5,6 +5,12 @@
         margin-right: auto;
         margin-top: 140px;
         margin-bottom: 140px;
+        @include xxl {
+            max-width: 820px;
+        }
+        @include lg {
+            max-width: 576px;
+        }
         @include st {
             margin-top: 0;
             margin-bottom: 0;
@@ -80,6 +86,9 @@
                 &__text {
                     @include st {}
                     margin-left: 73px;
+                    @include lg {
+                        margin-left: 0;
+                    }
                     @include st {
                         margin: 0;
                     }

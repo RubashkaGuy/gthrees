@@ -5,6 +5,13 @@
         margin-left: auto;
         margin-right: auto;
         margin-top: 140px;
+        @include xxl {
+            max-width: 820px;
+
+        }
+        @include lg {
+            max-width: 576px;
+        }
         @include st {
             max-width: 374px;
             
@@ -27,6 +34,9 @@
 
         .detnews {
             display: flex;
+            @include xxl {
+                flex-direction: column;
+            }
             @include st {
                 flex-direction: column;
             }
@@ -43,7 +53,11 @@
                     color: var(--color-text);
                     border-bottom: solid 1px var(--color-gray2);
                     padding-bottom: 60px;
+                    @include hd {
+                        width: unset;
+                    }
                     @include st {
+                        
                         padding-bottom: 0;
                         border: 0;
                     }
@@ -83,7 +97,13 @@
                 &-image {
                     width: 801px;
                     height: 391px;
+                    @include fullhd {
+                        width: unset;
+                        margin-right: 50px;
+                        
+                    }
                     @include st {
+                        margin-right: unset;
                         width: 373px;
                         height: 222px;
                     }

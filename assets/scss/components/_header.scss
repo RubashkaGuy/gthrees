@@ -111,6 +111,9 @@
         }
 
         &__button {
+            @include st {
+                display: none;
+            }
             background-color: var(--color-accent);
             height: 78px;
             padding: 21px 51px;
@@ -148,6 +151,50 @@
 
             }
         }
+        &__mobform {
+
+            background-color: var(--color-accent);
+            height: 78px;
+            padding: 21px 51px;
+            align-items: center;
+            display: flex;
+            margin-right: 40px;
+            display: none;
+            @include st {
+                display: flex;
+            }
+            @include st {
+                
+                padding-left: 21px;
+                padding-right: 21px;
+                height: 48px;
+                margin-right: 20px;
+                margin-left: auto;
+                width: 212px;
+                &-text {
+                    
+                }
+            }
+            @include md {
+                padding: 0 21px;
+            }
+            &-text {
+                @include st {
+                    font-size: 14px;
+                    
+                    text-overflow:ellipsis;
+                }
+                margin-right: 20px;
+                font-size: 16px;
+                font-weight: 700;
+                text-transform: uppercase;
+                
+            }
+            &-arrow {
+
+            }
+        }
+
     }
 }
 
@@ -196,3 +243,7 @@
         }
     }
 }
+
+
+
+

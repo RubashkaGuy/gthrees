@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- Подключение boxicons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+    <link rel="stylesheet" href="/assets/style/normalize.min.css">
+    <link rel="stylesheet" href="/assets/style/main-style.min.css">
+    <script defer src="/assets/javascript/application.js"></script>
+</head>
+<body class="application">
+    <div class="application__template">
+        <header class="application__header header" id="header">
+            <div class="header__container container nav">
+                <a href="/index.html" class="nav__logo">
+                    <img src="/assets/img/icons/logo.svg" alt="Логотип GTHREES" class="nav__logo-icon">
+                </a>
+                <a href="/index.html" class="nav__mobile">
+                    <img src="/assets/img/icons/logo-mobile.svg" alt="Логотип GTHREES" class="nav__logo-icon">
+                </a>
+                <ul class="nav__menu">
+                    <li class="nav__menu-item navitem serve">
+                        <a href="#!" class="navitem__item serve__item">
+                            <span class="navitem__item-text serve__item-text">Наши услуги</span>
+                            <img src="assets/img/icons/arrow-lng.svg" alt="" class="navitem__item-image serve__item-image">
+                        </a>
+                        <ul class="serve__dropdown">
+                            <li class="serve__dropdown-item">
+                                <a href="/services.html" class="serve__dropdown-item--link">Авиаперевозки</a>
+                            </li>
+                            <li class="serve__dropdown-item">
+                                <a href="/services.html" class="serve__dropdown-item--link">Автомобильные перевозки</a>
+                            </li>
+                            <li class="serve__dropdown-item">
+                                <a href="/services.html" class="serve__dropdown-item--link">Мультимодальные перевозки</a>
+                            </li>
+                            <li class="serve__dropdown-item">
+                                <a href="/services.html" class="serve__dropdown-item--link">Железнодорожные перевозки</a>
+                            </li>
+                            <li class="serve__dropdown-item">
+                                <a href="/services.html" class="serve__dropdown-item--link">Перевозки тяжеловесных и негабаритных грузов</a>
+                            </li>
+                            <li class="serve__dropdown-item">
+                                <a href="/services.html" class="serve__dropdown-item--link">Перевозки опасных грузов</a>
+                            </li>
+                        </ul>
+                    </li>
+                    
+                    <li class="nav__menu-item navitem">
+                        <a href="/contacts.html" class="navitem__item">Контакты</a>
+                    </li>
+                    <li class="nav__menu-item navitem">
+                        <a href="tel:375295462567" class="navitem__item">+375(29)546-25-67</a>
+                    </li>
+                </ul>
+                <button class="nav__language">
+                    <span class="nav__language-text">RU</span>
+                    <img src="assets/img/icons/arrow-lng.svg" alt="" class="nav__language-icon">
+                </button>
+                <button class="nav__button" onclick="location.href='form.html'">
+                    <span class="nav__button-text">Получить рассчёт</span>
+                    <img src="assets/img/icons/arrow.svg" alt="Значок стрелки" class="nav__button-arrow">
+                </button>
+                <button class="nav__mobform " onclick="location.href='shortform.html'">
+                    <span class="nav__mobform-text">Получить рассчёт</span>
+                    <img src="assets/img/icons/arrow.svg" alt="Значок стрелки" class="nav__mobform-arrow">
+                </button>
+                <button class="nav__burger">
+                    <img src="assets/img/icons/burger.svg" alt="Иконка меню" class="nav__burger-icon">
+                </button>
+            </div>
+        </header>
+        <main class="application__main main" id="main">
+            <div class="main__content" id="main-content">
+                <section class="burger">
+                    <div class="burger__container brcont">
+                        <div class="brcont__top">
+                            <div class="brcont__top-grid brgrid">
+                                
+                                <div class="brgrid__col brcol brcoltopleft">
+                                    <h3 class="brcol__title">Услуги</h3>
+                                    <div class="brcol__columns">
+                                        <a href="/services.html" class="brcol__columns-item">авиаперевозки</a>
+                                        <a href="/services.html" class="brcol__columns-item">железнодорожные перевозки</a>
+                                        <a href="/services.html" class="brcol__columns-item">автомобильные перевозки</a>
+                                        <a href="/services.html" class="brcol__columns-item">перевозки опасных грузов</a>
+                                        <a href="/services.html" class="brcol__columns-item">мультимодальные перевозки</a>
+                                        <a href="/services.html" class="brcol__columns-item">перевозки тяжеловесных и негабаритных грузов</a>
+                                    </div>
+                                </div>
+                                <div class="brgrid__col brcol brcoltopright">
+                                    <h3 class="brcol__title">КОМПАНИЯ</h3>
+                                    <div class="brcol__columns brcompany">
+                                        <a href="/company.html" class="brcol__columns-item">о компании</a>
+                                        <a href="/hire.html" class="brcol__columns-item">вакансии</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="brcont__bottom">
+                            <div class="brcont__bottom-grid brbgrid">
+                                <div class="brbgrid__col brbcol">
+                                    <h3 class="brbcol__title">КОНТАКТЫ</h3>
+                                    <div class="brbcol__columns">
+                                        <div class="brbcol__columns-belarus brbel">
+                                            <p class="brbel__title">ОФИС В РЕСПУБЛИКЕ БЕЛАРУСЬ</p>
+                                            <div class="brbel__contacts">
+                                                <p class="brbel__contacts-addr">г. Минск, пер. Козлова, 7Г-7</p>
+                                                <a href="#!" class="brbel__contacts-number">Тел: +375 (17) 252-22-25</a>
+                                            </div>
+                                            <div class="brbel__mail">
+                                                <a href="#!" class="brbel__mail-email">info@ghtrees.com</a>
+                                                <a href="#!" class="brbel__mail-email">sales@ghtrees.com</a>
+                                            </div>
+                                        </div>
+                                        <div class="brbcol__columns-russia brrus">
+                                            <p class="brrus__title">ОФИС В РОССИЙСКОЙ ФЕДЕРАЦИИ</p>
+                                            <div class="brrus__contacts">
+                                                <p class="brrus__contacts-addr">214013, г. Смоленск</p>
+                                                <p class="brrus__contacts-addr">ул. Памфилова, 5; офис 217</p>
+                                            </div>
+                                        </div>
+                                        <div class="brbcol__columns-contacts brbconts">
+                                            <a href="#!" class="brbconts__number">+375(17)252-22-25</a>
+                                            <div class="brbconts__sotr">
+                                                <p class="brbconts__sotr-title">Для сотрудничества</p>
+                                                <a href="#!" class="brbconts__sotr-email">info@gthrees.com</a>
+                                            </div>
+                                            <div class="brbconts__sell">
+                                                <p class="brbconts__sell-title">Отдел продаж</p>
+                                                <a href="#!" class="brbconts__sell-email">sales@gthrees.com</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="brcont__mobile">
+                            <div class="brcont__mobile-social brsoc">
+                                <a href="" class="brsoc__social">
+                                    <img src="assets/img/icons/whatsapp.svg" alt="" class="brsoc__social-icon">
+                                </a>
+                                <a href="" class="brsoc__social">
+                                    <img src="assets/img/icons/viber.svg" alt="" class="brsoc__social-icon">
+                                </a>
+                                <a href="" class="brsoc__social">
+                                    <img src="assets/img/icons/skype.svg" alt="" class="brsoc__social-icon">
+                                </a>
+                                <a href="" class="brsoc__social">
+                                    <img src="assets/img/icons/telegram.svg" alt="" class="brsoc__social-icon">
+                                </a>
+                            </div>
+                            <div class="brcont__mobile-public brpub">
+                                <a href="#!" class="brpub__item">FACEBOOK</a>
+                                <a href="#!" class="brpub__item">INSTAGRAM</a>
+                                <a href="#!" class="brpub__item">LINKEDIN</a>
+                            </div>
+                        </div>
+                        <img src="assets/img/icons/cross.svg" alt="" class="brcont__cross">
+                    </div>
+                </section>
+                <section class="shortlyform">
+                    <div class="shortlyform__container shortcont">
+                        <div class="shortcont__inputs">
+                            <div class="shortcont__inputs-input shortinput">
+                                <h3 class="shortinput__text">Ваше имя</h3>
+                                <input type="text" class="shortinput__input">
+                            </div>
+                            <div class="shortcont__inputs-input shortinput">
+                                <h3 class="shortinput__text">E-mail или телефон</h3>
+                                <input type="text" class="shortinput__input">
+                            </div>
+                            <div class="shortcont__inputs-input shortinput">
+                                <h3 class="shortinput__text">Откуда</h3>
+                                <input type="text" class="shortinput__input">
+                            </div>
+                            <div class="shortcont__inputs-input shortinput">
+                                <h3 class="shortinput__text">Куда</h3>
+                                <input type="text" class="shortinput__input">
+                            </div>
+                            <div class="shortcont__inputs-input shortinput shortcomment">
+                                <h3 class="shortinput__text">Ваш комментарий</h3>
+                                <input type="text" class="shortinput__input shortcomment__input">
+                            </div>
+                        </div>
+                        <div class="shortcont__attach shortatt">
+                            <h3 class="shortatt__title">Добавить файл</h3>
+                            <div class="shortatt__attach">
+                                <h3 class="shortatt__attach-text">Добавьте файл сюда</h3>
+                            </div>
+                        </div>
+                        <div class="shortcont__policy">
+                            <input type="checkbox" class="shortcont__policy-checkbox">
+                            <h3 class="shortcont__policy-title">Я согласен с условиями <a href="#!">Политики конфиденциальности</a> и <a href="#!">Обработки персональных данных.</a></h3>
+                        </div>
+                        <a href="#!" class="shortcont__link">
+                            <h3 class="shortcont__link-text">ПОЛУЧИТЬ РАССЧЁТ</h3>
+                            <img src="/assets/img/icons/arrow.svg" alt="" class="shortcont__link-icon">
+                        </a>
+                        <div class="shortcont__full">
+                            <p class="shortcont__full-text">Полную информацию можно заполнить <br>
+                                нажимая на кнопку «Полная форма»
+                            </p>
+                            <a href="/form.html" class="shortcont__full-link shlink">
+                                <h3 class="shlink__text">ПОЛНАЯ ФОРМА</h3>
+                                <img src="assets/img/icons/arrow.svg" alt="" class="shlink__icon">
+                            </a>
+                        </div>
+                        <a href="" class="shortcont__close">
+                            <img src="assets/img/icons/cross.svg" alt="" class="shortcont__close-icon">
+                        </a>
+                    </div>
+                </section>
+                <section class="formload">
+                    <div class="formload__container forcont">
+                        <div class="forcont__timeline">
+                            <h3 class="forcont__timeline-title">РАСЧЁТ СТОИМОСТИ</h3>
+                            <div class="forcont__timeline-time fortime">
+                                <div class="fortime__items foritems">
+                                    <div class="foritems__item written">
+                                        <img src="assets/img/icons/dot.svg" alt="" class="foritems__item-circactive">
+                                        <img src="assets/img/icons/circle.svg" alt="" class="foritems__item-circwritten">
+                                        <img src="assets/img/icons/Form/wcircle.svg" alt="" class="foritems__item-circle">
+                                        <h3 class="foritems__item-title">личные данные</h3>
+                                    </div>
+                                    <div class="foritems__item written">
+                                        <img src="assets/img/icons/dot.svg" alt="" class="foritems__item-circactive">
+                                        <img src="assets/img/icons/circle.svg" alt="" class="foritems__item-circwritten">
+                                        <img src="assets/img/icons/Form/wcircle.svg" alt="" class="foritems__item-circle">
+                                        <h3 class="foritems__item-title">направления</h3>
+                                    </div>
+                                    <div class="foritems__item written">
+                                        <img src="assets/img/icons/dot.svg" alt="" class="foritems__item-circactive">
+                                        <img src="assets/img/icons/circle.svg" alt="" class="foritems__item-circwritten">
+                                        <img src="assets/img/icons/Form/wcircle.svg" alt="" class="foritems__item-circle">
+                                        <h3 class="foritems__item-title">параметры груза</h3>
+                                    </div>
+                                    <div class="foritems__item active">
+                                        <img src="assets/img/icons/dot.svg" alt="" class="foritems__item-circactive">
+                                        <img src="assets/img/icons/circle.svg" alt="" class="foritems__item-circwritten">
+                                        <img src="assets/img/icons/Form/wcircle.svg" alt="" class="foritems__item-circle">
+                                        <h3 class="foritems__item-title">загрузка</h3>
+                                    </div>
+                                    <div class="foritems__item nactive">
+                                        <img src="assets/img/icons/dot.svg" alt="" class="foritems__item-circactive">
+                                        <img src="assets/img/icons/circle.svg" alt="" class="foritems__item-circwritten">
+                                        <img src="assets/img/icons/Form/wcircle.svg" alt="" class="foritems__item-circle">
+                                        <h3 class="foritems__item-title">условия поставки</h3>
+                                    </div>
+                                    <div class="foritems__item nactive">
+                                        <img src="assets/img/icons/dot.svg" alt="" class="foritems__item-circactive">
+                                        <img src="assets/img/icons/circle.svg" alt="" class="foritems__item-circwritten">
+                                        <img src="assets/img/icons/Form/wcircle.svg" alt="" class="foritems__item-circle">
+                                        <h3 class="foritems__item-title">комментарий</h3>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="forcont__form">
+                            <div class="forcont__form-upper forup">
+                                <div class="forup__inputs">
+                                    <h3 class="forup__inputs-title">Тип транспорта</h3>
+                                    <div class="forup__inputs-dropdown fdrop">
+                                        <div class="fdrop__up">
+                                            <h3 class="fdrop__up-text">Еврофура 82 см3</h3>
+                                            <img src="assets/img/icons/arrow-dd.svg" alt="" class="fdrop__up-icon">
+                                        </div>
+                                        <div class="fdrop__bottom">
+                                            <div data-value="navalom" class="fdrop__bottom-link">Навалом</div>
+                                            <div data-value="boxnopallet" class="fdrop__bottom-link">В коробках без паллет</div>
+                                            <div data-value="boxpallet" class="fdrop__bottom-link">В коробках на паллетах</div>
+                                            <div data-value="boxnopallet" class="fdrop__bottom-link">На паллетах</div>
+                                            <div data-value="bags" class="fdrop__bottom-link">Мешки</div>
+                                            <div data-value="bigbag" class="fdrop__bottom-link">Биг-бэги</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="forup__inputs">
+                                    <h3 class="forup__inputs-title">Тип загрузки</h3>
+                                    <div class="forup__inputs-dropdown fdrop">
+                                        <div class="fdrop__up">
+                                            <h3 class="fdrop__up-text">В коробках без паллет</h3>
+                                            <img src="assets/img/icons/arrow-dd.svg" alt="" class="fdrop__up-icon">
+                                        </div>
+                                        <div class="fdrop__bottom">
+                                            <div data-value="navalom" class="fdrop__bottom-link">Навалом</div>
+                                            <div data-value="boxnopallet" class="fdrop__bottom-link">В коробках без паллет</div>
+                                            <div data-value="boxpallet" class="fdrop__bottom-link">В коробках на паллетах</div>
+                                            <div data-value="boxnopallet" class="fdrop__bottom-link">На паллетах</div>
+                                            <div data-value="bags" class="fdrop__bottom-link">Мешки</div>
+                                            <div data-value="bigbag" class="fdrop__bottom-link">Биг-бэги</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="forup__inputs">
+                                    <h3 class="forup__inputs-title">Выбрать дату готовности груза</h3>
+                                    <input type="date" class="forup__inputs-input ">
+                                </div>
+                                <div class="forup__inputs">
+                                    <h3 class="forup__inputs-title">Желаемый ориентир по ставке</h3>
+                                    <input type="text" class="forup__inputs-input ">
+                                </div>
+
+                                <div class="forup__inputs formbutton">
+                                    <a href="/form5.html" class="forup__inputs-button">Далее</a>
+                                </div>
+                            </div>
+                            <div class="forcont__form-bottom forbot">
+                                <p class="forbot__shortform">Вы спешите? <br>
+                                    Нажмите на «Краткую форму»
+                                </p>
+                                <a href="/shortform.html" class="forbot__link">
+                                    <h3 class="forbot__link-title">КРАТКАЯ ФОРМА</h3>
+                                    <img src="assets/img/icons/arrow.svg" alt="" class="forbot__link-arrow">
+                                </a>
+                            </div>
+                            <div class="forcont__btn forbtn">
+                                <a href="№!" onclick="history.back(); return false;" class="forbtn__arrow forbtn__image">
+                                    <img src="assets/img/icons/Form/arrow.svg" alt="Вернуться на шаг назад" class="forbtn__arrow-image">
+                                </a>
+                                <a href="/index.html" class="forbtn__cross forbtn__image">
+                                    <img src="assets/img/icons/Form/cross.svg" alt="Закрыть форму" class="forbtn__cross-image">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </section>        
+            </div>
+        </main>
+        <footer class="application__footer footer">
+            <!-- контент подвала сайта -->
+        </footer>
+    </div>
+</body>
+</html>

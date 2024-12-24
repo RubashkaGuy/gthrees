@@ -6,7 +6,12 @@
         margin-left: 232px;
         margin-bottom: 140px;
         margin-top: 140px;
-
+        @include xxl {
+            max-width: 820px;
+            margin-left: auto;
+            margin-right: auto;
+            
+        }
         @include st {
             min-width: 374px;
             max-width: 374px;
@@ -23,22 +28,39 @@
         .manag {
 
             height: 758px;
-            @include st {
+            @include xxl {
+                max-width: 820px;
+                margin-left: 70px;
                 height: unset;
+                flex-direction: column;
+            }
+            @include st {
+                margin-left: unset;
+                height: unset;
+                max-width: unset;
             }
 
             border-top-left-radius: 4px;
             border-bottom-left-radius: 4px;
             display: flex;
             position: relative;
-
+            @include xxl {
+                width: 474px;
+            }
             @include st {
+                width: unset;
                 flex-direction: column;
             }
 
             background-color: var(--color-accent);
-
+            
             &__line {
+                @include xxl {
+                    position: absolute;
+                    left: 169px;
+                    z-index: 2;
+                    top: 6px;
+                }
                 @include st {
                     position: absolute;
                     left: 169px;
@@ -66,6 +88,11 @@
                 position: relative;
 
                 &-image {
+                    @include xxl {
+                        width: 474px;
+                        
+                        
+                    }
                     @include st {
                         width: 374px;
                         height: 460px;
